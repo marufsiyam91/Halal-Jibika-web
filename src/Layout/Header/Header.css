@@ -1,0 +1,56 @@
+.Navbar_wrapper{
+     height: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 60px;
+}
+
+/* .main_menu_area ul li >  a{
+     transition: all 0.2s ease;
+}
+
+.main_menu_area ul li > a:hover{
+     letter-spacing: 1.2px;
+     line-height: 2px;
+} */
+
+.logo_area h2{
+     font-family: 'Montserrat Alternates', sans-serif;
+     color: rgb(31, 173, 255);
+}
+
+.Navbar_wrapper  .main_menu_area ul{
+     display: flex; 
+}
+
+.Navbar_wrapper .main_menu_area ul li{
+     list-style-type: none;
+     padding: 0 21px;
+}
+
+.Navbar_wrapper .main_menu_area ul li a{
+     text-decoration: none;
+     color: #161718;
+     font-weight: 500;
+}
+
+.sign_in_up_btns{
+     display: flex;
+     width: 300px;
+     justify-content: flex-end;
+}
+
+.sign_in_up_btns .register{
+     border: 1px solid #212121;
+     padding: 5px 12px;
+     border-radius: 6px;
+}
+
+.sign_in_up_btns #signin_btn{
+     background: #302e2e;
+     color: #fff;
+     padding: 5px 10px;
+     border-radius: 5px;
+}
+
