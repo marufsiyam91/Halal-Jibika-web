@@ -15,9 +15,28 @@
      line-height: 2px;
 } */
 
-.logo_area h2{
-     font-family: 'Montserrat Alternates', sans-serif;
-     color: rgb(31, 173, 255);
+.logo_area{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 45px;
+     width: 210px;
+     border-radius: 12px;
+     background: #212121;
+}
+
+.logo_area:hover{
+     background: #dadada;
+}
+
+.logo_area .logo{
+     /* font-family: 'Montserrat Alternates', sans-serif; */
+     font-family: 'Montserrat', sans-serif;
+     font-style: italic;
+     font-size: 27px;
+     font-weight: 600;
+     color: rgb(255, 255, 255);
+     cursor: pointer;
 }
 
 .Navbar_wrapper  .main_menu_area ul{
@@ -47,9 +66,9 @@
      border-radius: 6px;
 }
 
-.sign_in_up_btns #signin_btn{
-     background: #302e2e;
+.sign_in_up_btns .signin_btn{
      color: #fff;
+     background: #302e2e;
      padding: 5px 10px;
      border-radius: 5px;
 }

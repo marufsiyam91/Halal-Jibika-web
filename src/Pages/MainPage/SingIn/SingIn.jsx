@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import './SignIn.css'
+import style from './SignIn.module.css'
 
 const SingIn = () => {
   return (
     <div>
-          <div className="sigin_form_container">
-          <div className="signin_form_wrapper">
-            <form className='singin_form'>
+          <div className={style.sigin_form_container}>
+          <div className={style.signin_form_wrapper}>
+            <form className={style.singin_form}>
 
               <label>
                 Email
@@ -19,12 +19,12 @@ const SingIn = () => {
               </label>
 
 
-              <button className="login_btn">
+              <button className={style.login_btn}>
                 Log in
               </button>
 
 
-                <button className="create_account_btn"><NavLink  to={'/signup'}>Create an account</NavLink></button>
+                <button className={style.create_account_btn}><NavLink  to={'/signup'}>Create an account</NavLink></button>
 
 
               </form>

@@ -8,7 +8,7 @@ import SignUp from "../Pages/MainPage/SingUp/SignUp"
 import NotFound from "../Pages/NotFound/NotFound"
 import About from '../Pages/MainPage/About/About'
 
-const Routes = createBrowserRouter([
+const routes = createBrowserRouter([
      {
           path: '/',
           element: <App/>,
@@ -45,4 +45,4 @@ const Routes = createBrowserRouter([
      }
 ])
 
-export default Routes
+export default routes
