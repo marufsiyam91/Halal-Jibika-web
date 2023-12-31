@@ -1,0 +1,106 @@
+.contact_top_area{
+     height: 220px;
+     background: rgb(149, 229, 255);
+     padding: 60px 80px;
+     position: relative;
+}
+
+.social_icons{
+     margin-top: 35px;
+}
+
+.social_icons ul{
+     display: flex;
+}
+
+.social_icons ul li{
+     list-style-type: none;
+     margin-right: 18px;
+     font-size: 20px;
+     width: 33px;
+     height: 33px;
+     background: #ffffff4b;
+     border-radius: 50%;
+     color: rgb(255, 255, 255);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease-in-out;
+}
+
+.social_icons ul li:hover{
+     color: rgba(11, 149, 255, 0.866);
+}
+
+
+
+
+.contact_info{
+     padding: 20px 80px;
+     height: 600px;
+}
+
+.contact_address, .contact_mail, .contact_phone{
+     display: flex;
+     align-items: center;
+     margin-top: 22px;
+}
+
+.contact_icon{
+     width: 40px;
+     height: 40px;
+     background: #d1d1d187;
+     color: rgb(0, 144, 233);
+     border-radius: 50%;
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-right: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form_wrapper{
+     position: absolute;
+     right: 80px;
+     top: 220px;
+     width: 480px;
+     height: 580px;
+     padding: 25px 15px;
+     background: #ffffff63;
+     border-radius: 10px;
+}
+
+.identity_info input{
+     width: 200px;
+}
+
+.contact_form input{
+     padding: 14px 10px;
+     border: none;
+     outline: none;
+     border-radius: 8px;
+     width: 440px;
+     margin-bottom: 8px;
+}
+
+.contact_form button{
+     padding: 7px  16px;
+     border: none;
+     color: #fff;
+     font-size: 20px;
+     font-weight: 600;
+     border-radius: 5px;
+     outline: none;
+     background: rgba(59, 206, 255, 0.747);
+}
+

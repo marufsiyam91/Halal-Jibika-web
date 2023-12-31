@@ -1,0 +1,78 @@
+.job_catagories_wrapper{
+     width: 100%;
+     padding: 60px 80px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.job_catagories_wrapper{
+     text-align: center;
+}
+
+.catagory_headline{
+     text-align: center;
+}
+
+.job_catagories_wrapper{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.catagory{
+     width: 320px;
+     height: 300px;
+     background: #fff;
+     margin-bottom: 25px;
+     border-radius: 12px;
+     padding: 35px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     z-index: 1;
+     transition: all 0.3s  ease;
+}
+
+/* .catagory:hover .catagory_hover{
+     width: 320px;
+     height: 320px;
+     border-radius: 12px;
+}
+
+.catagory_hover{
+     position: absolute;
+     width: 5px;
+     height: 5px;
+     background: #2994ffc3;
+     top: 0;
+     left: 0;
+     border-radius: 12px 0;
+     z-index: -1;
+     transition: all 0.3s  ease;
+} */
+
+
+
+
+.catagory p{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 105px;
+     height: 105px;
+     border-radius: 50%;
+     color: #fff;
+     font-size: 40px;
+     background: rgba(13, 154, 255, 0.674);
+}
+
+.catagory h4{
+     margin-top: 30px;
+     margin-bottom: 20px;
+}
+.catagory h5{
+     background: lightblue;
+     padding:  8px;
+     border-radius: 5px;
+}

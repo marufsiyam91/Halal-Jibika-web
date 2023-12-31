@@ -5,6 +5,7 @@ export const StateContext = createContext(null)
 // eslint-disable-next-line react/prop-types
 const StateContextProvider = ({children}) => {
 
+
     const [userData, setUserData] = useState({
       fullName: '',
       email: '',
@@ -32,8 +33,7 @@ const StateContextProvider = ({children}) => {
         }
       ])
     }
-
-    console.log(userData)
+    
     console.log(allUser)
 
     const values = {

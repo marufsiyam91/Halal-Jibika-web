@@ -13,6 +13,7 @@ const Header = () => {
                <div className={style.main_menu_area}>
                     <ul>
                          <li><NavLink to={'/'}>Home</NavLink></li>
+                         <li><NavLink to={'/jobs'}>Jobs</NavLink></li>
                          <li><NavLink to={'/about'}>About</NavLink></li>
                          <li><NavLink to={'/favourite'}>Favourite</NavLink></li>
                          <li><NavLink to={'/contact'}>Contact</NavLink></li>

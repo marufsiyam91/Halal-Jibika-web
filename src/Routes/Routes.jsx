@@ -7,6 +7,7 @@ import SingIn from "../Pages/MainPage/SingIn/SingIn"
 import SignUp from "../Pages/MainPage/SingUp/SignUp"
 import NotFound from "../Pages/NotFound/NotFound"
 import About from '../Pages/MainPage/About/About'
+import Jobs from "../Pages/MainPage/Jobs/Jobs"
 
 const routes = createBrowserRouter([
      {
@@ -16,6 +17,10 @@ const routes = createBrowserRouter([
                {
                     path: '/',
                     element: <Home/>
+               },
+               {
+                    path: '/jobs',
+                    element: <Jobs/>
                },
                {
                     path: '/about',

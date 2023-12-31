@@ -1,0 +1,66 @@
+.About_page_wrapper{
+     padding: 40px 80px;
+}
+
+.About_page_content h1{
+     margin-bottom: 35px;
+}
+
+.About_page_content p{
+     margin-top: 15px;
+}
+
+
+
+
+
+
+
+.job_account{
+     padding: 65px 0 0 0 ;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.about_work_process{
+     padding: 90px 0;
+     text-align: center;
+}
+
+.about_work_process p{
+     margin-bottom: 30px;
+}
+
+.about_work_process_wrapper{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.about_work{
+     text-align: center;
+     padding: 28px;
+     width: 420px;
+     height: 360px;
+     background: #ffffff5e;
+     border-radius: 15px;
+}
+
+.about_work h3{
+     margin: 20px 0; 
+}
+
+.about_work p{
+     font-size: 14px;
+}
