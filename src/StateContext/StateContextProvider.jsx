@@ -1,9 +1,13 @@
 import { createContext, useState } from 'react'
+import { useSignInWithGoogle, signInWithGoogle } from 'react-firebase-hooks/auth';
 
 export const StateContext = createContext(null)
 
 // eslint-disable-next-line react/prop-types
 const StateContextProvider = ({children}) => {
+
+
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
 
     const [userData, setUserData] = useState({
@@ -39,7 +43,8 @@ const StateContextProvider = ({children}) => {
     const values = {
       userData,
       handleChange,
-      handleSubmit
+      handleSubmit,
+      signInWithGoogle
     }
 
   return (

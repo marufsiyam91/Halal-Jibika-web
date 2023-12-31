@@ -8,7 +8,7 @@ import { StateContext } from '../../../StateContext/StateContextProvider';
 
 const SignUp = () => {
 
-  const {userData, handleChange, handleSubmit} = useContext(StateContext);
+  const {userData, handleChange, handleSubmit, signInWithGoogle} = useContext(StateContext);
 
 
   return (
@@ -44,7 +44,7 @@ const SignUp = () => {
               <button className={style.create_account_btn}>Create Account</button>
 
               <div className={style.signup_google_github}>
-                  <button> Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
+                  <button onClick={() => signInWithGoogle()}> Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
                   <button> Sign up with Github <span className={style.social_icons}><FaGithub /></span></button>
               </div>
               </form>
