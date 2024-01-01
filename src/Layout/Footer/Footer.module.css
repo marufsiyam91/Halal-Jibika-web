@@ -37,6 +37,8 @@
 .footer_content_employee > p{
      color: #dadada57;
      margin-top: 6px;
+     transition: all 0.3s ease;
+     cursor: pointer;
 }
 
 .footer_content_links > p:hover ,
@@ -57,5 +59,9 @@
 
      .footer_content_links{
           margin-top: 15px;
+     }
+
+     .footer_wrapper{
+          padding: 0;
      }
 }

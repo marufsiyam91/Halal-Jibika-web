@@ -64,3 +64,35 @@
 .about_work p{
      font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+     .About_page_wrapper{
+          padding: 40px;
+     }
+
+     .job_account{
+          flex-direction: column;
+     }
+
+     .job_single_account{
+          margin-bottom: 28px;
+     }
+
+     .about_work_process_wrapper{
+          flex-direction: column;
+     }
+
+     .about_work{
+          width: 84vw;
+          margin-bottom: 25px;
+     }
+}

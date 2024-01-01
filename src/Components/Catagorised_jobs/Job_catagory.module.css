@@ -3,6 +3,7 @@
      padding: 60px 80px;
      display: flex;
      flex-wrap: wrap;
+     margin-bottom: 40px;
 }
 
 .job_catagories_wrapper{
@@ -11,16 +12,22 @@
 
 .catagory_headline{
      text-align: center;
+     padding: 40px 0;
+}
+
+.catagory_headline h2{
+     font-size: 34px;
+     margin-bottom: 15px;
 }
 
 .job_catagories_wrapper{
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-evenly;
 }
 
 .catagory{
-     width: 320px;
+     width: 20vw;
      height: 300px;
      background: #fff;
      margin-bottom: 25px;
@@ -77,13 +84,13 @@
 
 
 @media (max-width: 768px) {
-
      .job_catagories_wrapper{
-          padding: 60px 20px;
-          justify-content: center;
+          flex-direction: column;
+          padding: 20px;
      }
 
-     .catagory{
 
+     .catagory{
+          width: 86vw;
      }
 }

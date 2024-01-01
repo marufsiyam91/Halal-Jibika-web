@@ -3,6 +3,7 @@
      background: rgb(149, 229, 255);
      padding: 60px 80px;
      position: relative;
+     z-index: -1;
 }
 
 .social_icons{
@@ -71,7 +72,7 @@
 
 .form_wrapper{
      position: absolute;
-     right: 80px;
+     right: 160px;
      top: 220px;
      width: 480px;
      height: 580px;
@@ -91,16 +92,59 @@
      border-radius: 8px;
      width: 440px;
      margin-bottom: 8px;
+     font-family: 'Montserrat', sans-serif;
 }
 
 .contact_form button{
      padding: 7px  16px;
      border: none;
      color: #fff;
-     font-size: 20px;
+     font-size: 18px;
      font-weight: 600;
      border-radius: 5px;
      outline: none;
      background: rgba(59, 206, 255, 0.747);
+     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+     .contact_top_area{
+          padding: 40px ;
+     }
+
+     .contact_info{
+          padding: 20px 40px;
+     }
+
+     .contact_info{
+          height: 980px;
+     }
+
+     .contact_form{
+          width: 95 vw;
+     }
+
+     .contact_form input{
+          width: 86vw;
+     }
+
+     textarea{
+          width: 86vw;
+     }
+
+     .form_wrapper{
+          left: 50%;
+          transform: translateX(-50%);
+          top: 650px;
+          width: 95vw;
+          background: #ecececbc;
+     }
+}
+
 

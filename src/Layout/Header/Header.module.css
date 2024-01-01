@@ -94,11 +94,17 @@
 
 @media (max-width: 786px) {
 
+
+     .Navbar_wrapper{
+          padding: 0 20px;
+     }
+
+
      .main_menu_area{
           padding: 25px;
           width: 70vw;
           height: 45vh;
-          background: #2121215f;
+          background: #212121;
           position: absolute;
           top: 70px;
           right: 0;
@@ -117,9 +123,11 @@
           align-items: end;
      }
 
-     .main_menu_area ul a{
+     .Navbar_wrapper .main_menu_area ul a{
           text-align: end;
+          color: #fff;
           margin-bottom: 8px;
+
      }
 
      .sign_in_up_btns{

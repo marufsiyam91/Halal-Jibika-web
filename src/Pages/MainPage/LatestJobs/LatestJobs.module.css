@@ -1,4 +1,4 @@
-.latest_item{
+     .latest_item{
      width: 20vw;
      height: 310px;
      background: #fff;
@@ -6,6 +6,11 @@
      margin-bottom: 30px;
      padding: 25px 15px  35px;
      text-align: center;
+}
+
+.jobfabourite{
+     display: flex;
+     padding: 0 5px;
 }
 
 .latest_job{
@@ -29,4 +34,19 @@
      border: 1px solid #dadada;
      outline: none;
      border-radius: 6px;
+}
+
+.jobfabourite span{
+     font-size: 25px;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+     .latest_item{
+          width: 84vw;
+     }
 }

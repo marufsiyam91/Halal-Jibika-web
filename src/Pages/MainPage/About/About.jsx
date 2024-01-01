@@ -39,17 +39,17 @@ const About = () => {
 
 
         <div className={style.job_account}>
-          <div>
+          <div className={style.job_single_account}>
             <h2>4 Million</h2>
             <p>4 million daily active users</p>
             </div>
 
-            <div>
+            <div className={style.job_single_account}>
               <h2>12k</h2>
               <p>Over 12k open job positions</p>
             </div>
 
-            <div>
+            <div className={style.job_single_account}>
               <h2>20M</h2>
               <p>Over 20 million stories shared</p>
             </div>

@@ -5,15 +5,23 @@ import { FaGithub } from "react-icons/fa";
 import style from './SingUp.module.css'
 import { useContext } from 'react';
 import { StateContext } from '../../../StateContext/StateContextProvider';
+// import { auth } from '../../../Config/Firebase';
+// import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 const SignUp = () => {
 
   const {userData, handleChange, handleSubmit, } = useContext(StateContext);
 
 
+  // const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
+  // if(error){
+  //   alert(error)
+  // }
 
-
+  // const handleGoogleSignup = () => {
+  //   signInWithGoogle()
+  // }
 
   return (
     <div> 
@@ -48,7 +56,8 @@ const SignUp = () => {
               <button className={style.create_account_btn}>Create Account</button>
 
               <div className={style.signup_google_github}>
-                  <button> Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
+              {/* onClick={handleGoogleSignup} */}
+                  <button > Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
                   <button> Sign up with Github <span className={style.social_icons}><FaGithub /></span></button>
               </div>
               </form>

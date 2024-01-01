@@ -25,11 +25,16 @@ const Home = () => {
       <Job_catagory/>
 
 
-      <div className={style.home_latest_job_area}>
-            {
-              data.map((item) => <LatestJobs key={item.id} Item={item}/>)
-            }
+      <div className={style.latest_job_wrapper}>
+      <h2>5205 Latest jobs are added recently</h2>
+        <div className={style.home_latest_job_area}>
+              {
+                data.map((item) => <LatestJobs key={item.id} Item={item}/>)
+              }
+        </div>
       </div>
+     
+
     </div>
   );
 };
