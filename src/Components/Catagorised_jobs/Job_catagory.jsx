@@ -48,6 +48,16 @@ const Job_catagory = () => {
                       <h4>Digital Marketing</h4>
                       <h5>100 Jobs</h5>
                   </div>
+                  <div className={style.catagory}>
+                      <p><TfiWorld /></p>
+                      <h4>Digital Marketing</h4>
+                      <h5>100 Jobs</h5>
+                  </div>
+                  <div className={style.catagory}>
+                      <p><TfiWorld /></p>
+                      <h4>Digital Marketing</h4>
+                      <h5>100 Jobs</h5>
+                  </div>
 
 
               </div>

@@ -53,3 +53,31 @@
      background: #fff;
      margin-top: 30px;
 }
+
+
+.home_latest_job_area{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding: 45px 80px;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+     .home_wrapper{
+          background-size: 260vw ;
+     }
+
+     .hero_content_area h1{
+          font-size: 4.1vw;
+     }
+
+     .hero_content_area  button{
+          font-size: 3vw;
+          margin-bottom: 5vh;
+     }
+}

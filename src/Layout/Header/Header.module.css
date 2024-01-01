@@ -15,40 +15,49 @@
      line-height: 2px;
 } */
 
+
 .logo_area{
      display: flex;
      align-items: center;
      justify-content: center;
-     height: 45px;
-     width: 210px;
+     padding: 5px 8px;
      border-radius: 12px;
      background: #212121;
 }
 
-.logo_area:hover{
-     background: #dadada;
-}
 
-.logo_area .logo{
-     /* font-family: 'Montserrat Alternates', sans-serif; */
+.logo_area .logo{ 
+     font-family: 'Montserrat Alternates', sans-serif;
      font-family: 'Montserrat', sans-serif;
      font-style: italic;
-     font-size: 27px;
+     font-size: 1.5rem;
      font-weight: 600;
      color: rgb(255, 255, 255);
      cursor: pointer;
 }
 
+.menubar_area{
+     position: absolute;
+     right: 20px;
+}
+
+.menubar_area input{
+     /* display: none; */
+}
+
+.menubar_area label{
+     display: none;
+}
+
+
 .Navbar_wrapper  .main_menu_area ul{
      display: flex; 
+     align-items: center;
 }
 
-.Navbar_wrapper .main_menu_area ul li{
+.Navbar_wrapper .main_menu_area ul a{
      list-style-type: none;
-     padding: 0 21px;
-}
-
-.Navbar_wrapper .main_menu_area ul li a{
+     padding: 0 1.3125rem;
      text-decoration: none;
      color: #161718;
      font-weight: 500;
@@ -56,20 +65,93 @@
 
 .sign_in_up_btns{
      display: flex;
-     width: 300px;
+     width: 310px;
      justify-content: flex-end;
+     align-items: center;
 }
 
-.sign_in_up_btns .register{
-     border: 1px solid #212121;
-     padding: 5px 12px;
-     border-radius: 6px;
+.sign_in_up_btns #register{
+     color: #010101;
+     padding: 8px 10px;
+     border: 1px solid #dadada;
+     border-radius: 10px;
+     margin-right: 1.3125rem;
 }
 
-.sign_in_up_btns .signin_btn{
+.sign_in_up_btns #signin_btn{
+     padding: 8px 10px;
+     border-radius: 10px;
+     background: #212121;
      color: #fff;
-     background: #302e2e;
-     padding: 5px 10px;
-     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 786px) {
+
+     .main_menu_area{
+          padding: 25px;
+          width: 70vw;
+          height: 45vh;
+          background: #2121215f;
+          position: absolute;
+          top: 70px;
+          right: 0;
+          border-radius: 0 0 0 10px;
+     }
+
+     .menubar_area label{
+          display: block;
+          font-size: 20px;
+     }
+
+
+
+     .main_menu_area ul{
+          flex-direction: column;
+          align-items: end;
+     }
+
+     .main_menu_area ul a{
+          text-align: end;
+          margin-bottom: 8px;
+     }
+
+     .sign_in_up_btns{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .sign_in_up_btns #signin_btn{
+          padding: 8px 18px;
+     }
+
+     .logo_area .logo{
+          font-size: 1rem;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -25,7 +25,7 @@ const Home = () => {
       <Job_catagory/>
 
 
-      <div className="home_latest_job_area">
+      <div className={style.home_latest_job_area}>
             {
               data.map((item) => <LatestJobs key={item.id} Item={item}/>)
             }

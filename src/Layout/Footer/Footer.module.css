@@ -45,3 +45,17 @@
 .footer_content_employee > p:hover{
      color: #ffffff;
 }
+
+
+
+
+
+@media (max-width: 768px) {
+     .footer_content_container{
+          flex-direction: column;
+     }
+
+     .footer_content_links{
+          margin-top: 15px;
+     }
+}

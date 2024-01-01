@@ -1,68 +1,124 @@
 {
-     "jobs": [
-         {
-             "id": 1,
-             "title": "Google Internship Program",
-             "logo": "https://en.wikipedia.org/wiki/Google_logo#/media/File:Google_%22G%22_logo.svg",
-             "companyName": "Google",
-             "position": "Intern Developer",
-             "description": "This is an internship opportunity from Google"
-         },
-         {
-             "id": 2,
-             "title": "Facebook Junior Development Program",
-             "logo": "https://en.wikipedia.org/wiki/Facebook#/media/File:2023_Facebook_icon.svg",
-             "companyName": "Facebook",
-             "position": "Junior Developer",
-             "description": "This is a junior developer recruitment from Facebook"
-         },
-         {
-             "id": 3,
-             "title": "Microsoft Senior Development Program",
-             "logo": "https://en.wikipedia.org/wiki/Microsoft#/media/File:Microsoft_logo_(2012).svg",
-             "companyName": "Microsoft",
-             "position": "Senior Developer",
-             "description": "This is a junior developer recruitment from Microsoft"
-         },
-         {
-             "id": 4,
-             "title": "Meta senior developer",
-             "logo": "https://en.wikipedia.org/wiki/Meta_Platforms#/media/File:Meta_Platforms_Inc._logo.svg",
-             "companyName": "Meta",
-             "position": "Senior Developer",
-             "description": "This is a senior developer recruitment from Meta"
-         },
-         {
-             "id": 5,
-             "title": "Youtube junior developer",
-             "logo": "https://en.wikipedia.org/wiki/YouTube#/media/File:YouTube_Logo_2017.svg",
-             "companyName": "Youtube",
-             "position": "junior Developer",
-             "description": "This is a junior developer recruitment from youtube"
-         },
-         {
-             "id": 6,
-             "title": "Nasa Hacker",
-             "logo": "https://en.wikipedia.org/wiki/NASA#/media/File:NASA_logo.svg",
-             "companyName": "Youtube",
-             "position": "junior Developer",
-             "description": "This is a Hacker from nasa"
-         },
-         {
-             "id": 7,
-             "title": "Tesla junior developer",
-             "logo": "https://en.wikipedia.org/wiki/Tesla,_Inc.#/media/File:Tesla_Motors.svg",
-             "companyName": "Tesla",
-             "position": "junior Developer",
-             "description": "This is a junior developer recruitment from Tesla"
-         },
-         {
-             "id": 8,
-             "title": "X junior developer",
-             "logo": "https://en.wikipedia.org/wiki/Twitter#/media/File:X_logo_2023.svg",
-             "companyName": "X",
-             "position": "junior Developer",
-             "description": "This is a junior developer recruitment from X"
-         }
-     ]
- }
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Junior Web Developer",
+      "company": "Google LLC",
+      "salary": "$80,000 - $100,000",
+      "position": "Junior Web Developer",
+      "description": "Start your career at Google as a Junior Web Developer, working on exciting projects and learning from experienced professionals.",
+      "location": "Mountain View, CA",
+      "postDate": "2024-01-10",
+      "expireDate": "2024-02-10",
+      "logo": "https://i.postimg.cc/zfGXwqHH/pngwing-com.png"
+    },
+    {
+      "id": 2,
+      "title": "Frontend Engineer",
+      "company": "Meta (Facebook)",
+      "salary": "$100,000 - $120,000",
+      "position": "Frontend Engineer",
+      "description": "Join Meta (Facebook) as a Frontend Engineer, contributing to the development of visually appealing and interactive user interfaces.",
+      "location": "Menlo Park, CA",
+      "postDate": "2024-01-15",
+      "expireDate": "2024-02-15",
+      "logo": "https://i.postimg.cc/YSM7HDyM/pngwing-com-3.png"
+    },
+    {
+      "id": 3,
+      "title": "Senior Full Stack Developer",
+      "company": "Microsoft Corporation",
+      "salary": "$120,000 - $150,000",
+      "position": "Senior Full Stack Developer",
+      "description": "Lead projects and mentor a team at Microsoft as a Senior Full Stack Developer, influencing the architecture and scalability of web applications.",
+      "location": "Redmond, WA",
+      "postDate": "2024-01-20",
+      "expireDate": "2024-02-20",
+      "logo": "https://i.postimg.cc/CL2ZxBRr/pngwing-com-1.png"
+    },
+    {
+      "id": 4,
+      "title": "UI/UX Design Intern",
+      "company": "Adobe Inc.",
+      "salary": "Paid Internship",
+      "position": "UI/UX Design Intern",
+      "description": "Gain hands-on experience in UI/UX design as an intern at Adobe, working closely with our design team on real projects.",
+      "location": "San Jose, CA",
+      "postDate": "2024-01-25",
+      "expireDate": "2024-02-25",
+      "logo": "https://i.postimg.cc/GmPLYHMj/pngwing-com-8.png"
+    },
+    {
+      "id": 5,
+      "title": "Backend Developer",
+      "company": "Amazon Web Services",
+      "salary": "$90,000 - $110,000",
+      "position": "Backend Developer",
+      "description": "Contribute to the server-side development at Amazon Web Services, ensuring the robustness and efficiency of web applications and services.",
+      "location": "Seattle, WA",
+      "postDate": "2024-02-01",
+      "expireDate": "2024-03-01",
+      "logo": "https://i.postimg.cc/4dysrwX8/pngwing-com-9.png"
+    },
+    {
+      "id": 6,
+      "title": "Senior Web Developer",
+      "company": "Apple Inc.",
+      "salary": "$130,000 - $160,000",
+      "position": "Senior Web Developer",
+      "description": "Lead and mentor a team of web developers at Apple, working on innovative projects that shape the future of web technology.",
+      "location": "Cupertino, CA",
+      "postDate": "2024-02-05",
+      "expireDate": "2024-03-05",
+      "logo": "https://i.postimg.cc/RZnW6SfS/pngwing-com-2.png"
+    },
+    {
+      "id": 7,
+      "title": "Frontend Architect",
+      "company": "Netflix Inc.",
+      "salary": "$150,000 - $180,000",
+      "position": "Frontend Architect",
+      "description": "Drive the architectural decisions for frontend development at Netflix, influencing the design and scalability of web applications.",
+      "location": "Los Gatos, CA",
+      "postDate": "2024-02-10",
+      "expireDate": "2024-03-10",
+      "logo": "https://i.postimg.cc/Gpqb76n8/pngwing-com-11.png"
+    },
+    {
+      "id": 8,
+      "title": "Web Application Engineer",
+      "company": "Salesforce",
+      "salary": "$100,000 - $120,000",
+      "position": "Web Application Engineer",
+      "description": "Work on developing and optimizing web applications at Salesforce, focusing on performance and user experience.",
+      "location": "San Francisco, CA",
+      "postDate": "2024-02-15",
+      "expireDate": "2024-03-15",
+      "logo": "https://i.postimg.cc/6QJyCkLd/pngwing-com-3.png"
+    },
+    {
+      "id": 9,
+      "title": "Junior Full Stack Developer",
+      "company": "IBM Corporation",
+      "salary": "$70,000 - $90,000",
+      "position": "Junior Full Stack Developer",
+      "description": "Kickstart your full-stack development career at IBM as a Junior Full Stack Developer, contributing to various aspects of web applications.",
+      "location": "Armonk, NY",
+      "postDate": "2024-02-20",
+      "expireDate": "2024-03-20",
+      "logo": "https://i.postimg.cc/pd22BR4M/pngwing-com-13.png"
+    },
+    {
+      "id": 10,
+      "title": "Software Engineering Intern - Web Technologies",
+      "company": "Twitter Inc.",
+      "salary": "Paid Internship",
+      "position": "Software Engineering Intern - Web Technologies",
+      "description": "Intern with Twitter and get hands-on experience in web technologies, working on projects that impact millions of users.",
+      "location": "San Francisco, CA",
+      "postDate": "2024-02-25",
+      "expireDate": "2024-03-25",
+      "logo": "https://i.postimg.cc/1t84pyV5/pngwing-com-14.png"
+    }
+  ]
+}
