@@ -25,6 +25,10 @@ const routes = createBrowserRouter([
                     element: <Jobs/>,
                },
                {
+                    path: '/addjobs',
+                    element: <Addjobs/>
+               },
+               {
                     path: 'userDetails/:id',
                     element: <UserDetails/>,
                     loader: ({params}) => 
@@ -56,10 +60,7 @@ const routes = createBrowserRouter([
           path: '*',
           element: <NotFound/>
      },
-     {
-          path: '/addjobs',
-          element: <Addjobs/>
-     }
+
 ])
 
 export default routes

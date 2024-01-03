@@ -1,11 +1,13 @@
 .jobCard{
   width: 44.5vw;
-  height: 320px;
-  background: rgba(116, 220, 255, 0.518);
+  height: 400px;
+  background: rgba(116, 220, 255, 0.458);
   border-radius: 12px;
   margin-bottom: 3vw;
   padding: 25px;
 }
+
+
 
 .jobcard_wrapper{
   height: 100%;
@@ -25,6 +27,14 @@
 
 .jobcard_content img{
   width: 5vw;
+}
+
+.jobcard_content hr{
+  color: #212121;
+}
+
+.salary_color{
+  color: rgb(255, 255, 255);
 }
 
 .bottom_button{

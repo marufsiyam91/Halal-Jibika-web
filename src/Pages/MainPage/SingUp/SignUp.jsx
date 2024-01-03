@@ -1,30 +1,33 @@
-
-import { NavLink } from 'react-router-dom'
+ import { NavLink } from 'react-router-dom'
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import style from './SingUp.module.css'
-import { useContext } from 'react';
-import { StateContext } from '../../../StateContext/StateContextProvider';
 import { auth } from '../../../Config/Firebase';
-import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword,  useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 
 const SignUp = () => {
 
-  const {userData, handleChange, handleSubmit, } = useContext(StateContext);
-
-  console.log(userData.email, userData.passwod)
-
   //signUp with email and password
   const [
-    signInWithEmailAndPassword,
-    googleLoading,
-    googleError,
-  ] = useSignInWithEmailAndPassword(auth);
+    createUserWithEmailAndPassword,
+    
+  ] = useCreateUserWithEmailAndPassword(auth);
 
 
-  const handleSignup = () => {
-    signInWithEmailAndPassword(userData.email, userData.password)
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const fullName = e.target.fullName.value
+    const email = e.target.email.value
+    const password = e.target.password.value
+    const confirmPassword = e.target.confirmPassword.value
+
+
+    if (password!== confirmPassword) {
+      alert("Passwords do not match")
+    } else {
+      createUserWithEmailAndPassword(email, password)
+    }
   }
 
 
@@ -55,25 +58,26 @@ const SignUp = () => {
               
               <label>
                 Full Name
-                <input onChange={handleChange} type="text" name="fullName" value={userData.fullName} placeholder="Your Full Name Here"/>
+                <input type="text" name="fullName"  placeholder="Your Full Name Here"/>
               </label>
 
               <label>
                 Email
-                <input onChange={handleChange} type="email" name="email" value={userData.email} placeholder="Your Email"/>
+                <input type="email" name="email"  placeholder="Your Email"/>
               </label>
 
               <label>
                 Password
-                <input onChange={handleChange} type="password" name="password" value={userData.password} placeholder="New password"/>
+                <input type="password" name="password"  placeholder="New password"/>
               </label>
 
               <label>
                 Confirm Password
-                <input onChange={handleChange} type="password" name="confirmPassword" value={userData.confirmPassword} placeholder="Confirm password"/>
+                <input type="password" name="confirmPassword"  placeholder="Confirm password"/>
               </label>
 
-              <button onClick={handleSignup} className={style.create_account_btn}>Create Account</button>
+
+              <button  className={style.create_account_btn}>Create Account</button>
 
               <div className={style.signup_google_github}>
               

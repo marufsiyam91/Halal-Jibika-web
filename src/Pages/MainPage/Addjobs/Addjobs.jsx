@@ -1,35 +1,79 @@
+import { useState } from 'react'
 import style from './Addjobs.module.css'
+import axios from 'axios'
 
 const Addjobs = () => {
+
+  const URL= 'http://localhost:9000/jobs'
+
+  const [jobData, setJobData] = useState({
+    title: '',
+    logo: '',
+    company: '',
+    position: '',
+    description: '',
+    salary: '',
+  })
+
+
+  const handleFormChange = (e) => {
+    const {name, value} = e.target;
+    setJobData({
+      ...jobData,
+       [name]: value
+      })
+  }
+
+
+
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    axios.post(URL, jobData).then((response) => {
+      // Assuming the response.data is the updated job data from the server
+      setJobData(response.data);
+    });
+  };
+
+
+
+
+
+
   return (
     <div className={style.Addjobs_form_wrapper}>
-          <form className={style.addjob_form}>
+          <form onSubmit={handleFormSubmit} className={style.addjob_form}>
                <label>
                     Your job title
-                <input type="text" placeholder='Title'/>
+                <input onChange={handleFormChange} name='title' value={jobData.title} type="text" placeholder='Title'/>
                </label>
 
                <label>
                     Logo
-                <input type="url" placeholder='Logo'/>
+                <input onChange={handleFormChange} name='logo' value={jobData.logo} type="url" placeholder='Logo'/>
                </label>
 
              <label>
                     Company Name
-                <input type="text" placeholder='Company Name'/>
+                <input onChange={handleFormChange} name='company' value={jobData.company} type="text" placeholder='Company Name'/>
                </label>
 
                 <label>
                     Position
-                <input type="text" placeholder='Position'/>
+                <input onChange={handleFormChange} name='position' value={jobData.position}  type="text" placeholder='Position'/>
                </label>
 
                <label>
                     Description
-                <input type="text" placeholder='Description'/>
+                <input onChange={handleFormChange} name='description' value={jobData.description} type="text" placeholder='Description'/>
                </label>
 
-               <button>Add Job</button>
+               <label>
+                    salary
+                    <input onChange={handleFormChange} name='salary' value={jobData.salary} type="text" placeholder='Salary'/>
+               </label>
+
+               <button type='submit'>Add Job</button>
 
           </form>
     </div>

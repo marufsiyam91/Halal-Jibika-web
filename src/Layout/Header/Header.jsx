@@ -43,6 +43,7 @@ const Header = () => {
               <NavLink to={"/about"}>About</NavLink>
               <NavLink to={"/favourite"}>Favourite</NavLink>
               <NavLink to={"/contact"}>Contact</NavLink>
+               {user && <NavLink to={'/addjobs'}>Post Job</NavLink> }
               <div className={style.sign_in_up_btns}>
               {user ?
                 (
