@@ -86,6 +86,25 @@
 }
 
 
+.user_image{
+     width: 2.8vw;
+     margin-left: 1vw;
+     border-radius: 50%;
+}
+
+
+.logout_btn{
+     padding: 8px 12px;
+     border-radius: 8px;
+     background: #212121;
+     color: #fff;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+     font-size: 15px;
+}
+
+
+
 
 
 

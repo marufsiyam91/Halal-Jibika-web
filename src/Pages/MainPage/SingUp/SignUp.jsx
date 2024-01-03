@@ -5,23 +5,43 @@ import { FaGithub } from "react-icons/fa";
 import style from './SingUp.module.css'
 import { useContext } from 'react';
 import { StateContext } from '../../../StateContext/StateContextProvider';
-// import { auth } from '../../../Config/Firebase';
-// import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { auth } from '../../../Config/Firebase';
+import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
+
 
 const SignUp = () => {
 
   const {userData, handleChange, handleSubmit, } = useContext(StateContext);
 
+  console.log(userData.email, userData.passwod)
 
-  // const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  //signUp with email and password
+  const [
+    signInWithEmailAndPassword,
+    googleLoading,
+    googleError,
+  ] = useSignInWithEmailAndPassword(auth);
 
-  // if(error){
-  //   alert(error)
-  // }
 
-  // const handleGoogleSignup = () => {
-  //   signInWithGoogle()
-  // }
+  const handleSignup = () => {
+    signInWithEmailAndPassword(userData.email, userData.password)
+  }
+
+
+
+
+  const [signInWithGoogle, ] = useSignInWithGoogle(auth);
+  const [signInWithGithub, ] = useSignInWithGithub(auth);
+
+  const handleGoogleSignup = () => {
+    signInWithGoogle()
+  }
+
+  const handleGithubSignup = () => {
+    signInWithGithub()
+  }
+
+
 
   return (
     <div> 
@@ -53,12 +73,12 @@ const SignUp = () => {
                 <input onChange={handleChange} type="password" name="confirmPassword" value={userData.confirmPassword} placeholder="Confirm password"/>
               </label>
 
-              <button className={style.create_account_btn}>Create Account</button>
+              <button onClick={handleSignup} className={style.create_account_btn}>Create Account</button>
 
               <div className={style.signup_google_github}>
-              {/* onClick={handleGoogleSignup} */}
-                  <button > Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
-                  <button> Sign up with Github <span className={style.social_icons}><FaGithub /></span></button>
+              
+                  <button onClick={handleGoogleSignup}> Sign up with Google <span className={style.social_icons}><FcGoogle /></span></button>
+                  <button onClick={handleGithubSignup}> Sign up with Github <span className={style.social_icons}><FaGithub /></span></button>
               </div>
               </form>
           </div>

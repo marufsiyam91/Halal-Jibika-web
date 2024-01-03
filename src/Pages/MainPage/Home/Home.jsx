@@ -1,10 +1,12 @@
 import style from "./Home.module.css";
-import Data from '../../../Data/Data.json'
+import Data from '../../../../public/Data/Data.json'
 import LatestJobs from "../LatestJobs/LatestJobs";
 import Job_catagory from "../../../Components/Catagorised_jobs/Job_catagory";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-
+  
+  const navigate = useNavigate()
   const data = Data.jobs
 
 
@@ -17,7 +19,7 @@ const Home = () => {
               Jobs that you want <br /> You can apply for <span>your desired dream jobs.</span>
             </h1>
 
-            <button>Explore more</button>
+            <button onClick={() => navigate('/jobs')}>Explore more</button>
           </div>
         </div>
       </div>
@@ -32,6 +34,7 @@ const Home = () => {
                 data.map((item) => <LatestJobs key={item.id} Item={item}/>)
               }
         </div>
+        <button onClick={() => navigate('/jobs')} className={style.alljobs_btn}>Explore all jobs</button>
       </div>
      
 

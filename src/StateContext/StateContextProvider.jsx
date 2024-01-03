@@ -24,18 +24,16 @@ const StateContextProvider = ({children}) => {
 
     const handleSubmit = (e) => {
       e.preventDefault()
-      setAlluser([
-        ...allUser,
+      setUserData(
         {
           fullName: e.target.name.value,
           email: e.target.email.value,
           password: e.target.password.value,
           confirmPassword: e.target.confirmPassword.value
         }
-      ])
+      )
     }
     
-    console.log(allUser)
 
     const values = {
       userData,

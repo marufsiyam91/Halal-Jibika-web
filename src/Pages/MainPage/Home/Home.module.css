@@ -42,6 +42,29 @@
      justify-content: center;
 }
 
+.latest_job_wrapper{
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.alljobs_btn{
+     padding: 8px 12px;
+     font-family: 'Montserrat', sans-serif;;
+     font-size: 18px;
+     font-weight: 600;
+     border-radius: 8px;
+     border: none;
+     outline: none;
+     background: rgb(40, 158, 255);
+     color: #fff;
+}
+
+.latest_job_wrapper h2{
+     text-align: center;
+     font-size: 38px;
+     margin: 90px 0 25px 0;
+}
+
 .hero_content_area  button{
      padding: 10px 18px;
      font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,7 @@
+.jobs_wrapper{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 60px;
+     justify-content: space-between;
+}

@@ -2,11 +2,26 @@ import { NavLink } from "react-router-dom";
 import { RiMenu4Line } from "react-icons/ri";
 import style from "./Header.module.css";
 import { useState } from "react";
+import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
+import { auth } from "../../Config/Firebase";
+
+
+
 
 const Header = () => {
+  const [user] = useAuthState(auth);
   const [isShow, setIsShow] = useState(true);
 
-  console.log(isShow)
+  const [signOut, loading, error] = useSignOut(auth);
+
+
+  const handleSignout = () => {
+    signOut()
+  }
+
+
+  console.log(user)
+
 
   return (
     <div>
@@ -29,12 +44,23 @@ const Header = () => {
               <NavLink to={"/favourite"}>Favourite</NavLink>
               <NavLink to={"/contact"}>Contact</NavLink>
               <div className={style.sign_in_up_btns}>
-                <NavLink to={"/signup"} id={style.register}>
+              {user ?
+                (
+                  <>
+                <button onClick={handleSignout} className={style.logout_btn}>Log out </button>       
+                <img className={style.user_image} src={user.photoURL} />
+                </>       
+                ) : (
+                  <>
+                  <NavLink to={"/signup"} id={style.register}>
                   Register
                 </NavLink>
                 <NavLink to={"/signin"} id={style.signin_btn}>
                   Sign In
                 </NavLink>
+                </>
+                )
+                   }
               </div>
             </ul>
           </div>
