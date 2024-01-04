@@ -20,8 +20,6 @@ const Header = () => {
   }
 
 
-  console.log(user)
-
 
   return (
     <div className={style.navbar_container}>

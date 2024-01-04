@@ -11,6 +11,7 @@ import Jobs from "../Pages/MainPage/Jobs/Jobs"
 import UserDetails from "../Pages/UserDetails/UserDetails"
 import ApplyedJobs from "../Pages/MainPage/ApplyedJobs/ApplyedJobs"
 import Addjobs from "../Pages/MainPage/Addjobs/Addjobs"
+import Single_job from "../Components/Single_job/Single_job"
 
 const routes = createBrowserRouter([
      {
@@ -34,6 +35,11 @@ const routes = createBrowserRouter([
                     fetch(`http://localhost:9000/jobs/${params.id}`)
                },
                {
+                    element: <Single_job/>,
+                    loader:({params}) =>
+                    fetch(`http://localhost:9000/jobs/${params.id}`)
+               },
+               {
                     path: '/about',
                     element: <About/>
                },
@@ -47,7 +53,7 @@ const routes = createBrowserRouter([
                },
                {
                     path: '/favourite',
-                    element: <Favourite/>
+                    element: <Favourite/>,
                },
                {
                     path: 'applyedjobs',

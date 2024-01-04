@@ -1,0 +1,53 @@
+.jobCard{
+     width: 44.5vw;
+     height: 400px;
+     background: rgba(116, 220, 255, 0.458);
+     border-radius: 12px;
+     padding: 25px;
+     margin-bottom: 30px;
+   }
+   
+   
+   
+   .jobcard_wrapper{
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
+   
+   .top_buttons{
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .top_buttons{
+     font-size: 28px;
+   }
+   
+   .jobcard_content img{
+     width: 5vw;
+   }
+   
+   .jobcard_content hr{
+     color: #212121;
+   }
+   
+   .salary_color{
+     color: rgb(255, 255, 255);
+   }
+   
+   .bottom_button{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+   
+   .bottom_button button{
+     padding: 6px 10px;
+     border-radius: 12px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     font-size: 16px;
+   }

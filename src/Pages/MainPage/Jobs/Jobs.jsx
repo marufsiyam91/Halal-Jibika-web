@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './Jobs.module.css';
 import Single_job from '../../../Components/Single_job/Single_job';
-import Data from '../../../../public/Data/Data'
 
 const Jobs = () => {
   const Url = 'http://localhost:9000/jobs';
@@ -10,7 +9,6 @@ const Jobs = () => {
   const [jobData, setJobData] = useState([])
   const [isDataUpdaitng, setIsDataUpdating] = useState(false)
 
-  const data = Data.jobs;
 
   useEffect(() => {
     const fetchData = async () => {

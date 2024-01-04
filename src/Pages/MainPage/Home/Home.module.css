@@ -26,7 +26,6 @@
      width: 100%;
      height: calc(100vh - 70px);
      display: flex;
-     background: #fff;
      justify-content: space-between;
 }
 
@@ -83,6 +82,65 @@
      padding: 45px 80px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Module CSS (HomePage.module.css) */
+
+.homePageContainer {
+     display: flex;
+     height: 100vh;
+     align-items: center;
+   }
+   
+   .leftContent {
+     flex: 1;
+     padding: 20px;
+   }
+   
+   .rightContent {
+     flex: 1;
+     padding: 20px;
+   }
+   
+   .exploreButton {
+     background-color: #4caf50;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+   }
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

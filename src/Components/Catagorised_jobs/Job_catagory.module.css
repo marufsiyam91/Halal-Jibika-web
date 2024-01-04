@@ -36,26 +36,13 @@
      display: flex;
      flex-direction: column;
      align-items: center;
+     transition: all 0.3s ease-out;
 }
 
-/* .catagory:hover .catagory_hover{
-     width: 320px;
-     height: 320px;
-     border-radius: 12px;
+.catagory:hover{
+     background: rgba(102, 217, 255, 0.689);
+     color: #fff;
 }
-
-.catagory_hover{
-     position: absolute;
-     width: 5px;
-     height: 5px;
-     background: #2994ffc3;
-     top: 0;
-     left: 0;
-     border-radius: 12px 0;
-     z-index: -1;
-     transition: all 0.3s  ease;
-} */
-
 
 
 
@@ -68,7 +55,13 @@
      border-radius: 50%;
      color: #fff;
      font-size: 40px;
-     background: rgba(13, 154, 255, 0.674);
+     background: #69c6ff85;
+
+}
+
+.catagory:hover  p{
+     background: #fff;
+     color: #212121;
 }
 
 .catagory h4{

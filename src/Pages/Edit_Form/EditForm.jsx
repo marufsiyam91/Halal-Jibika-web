@@ -1,62 +1,45 @@
 import { useState } from 'react'
-import style from './Addjobs.module.css'
+import style from './Edit_form.module.css'
 import axios from 'axios'
-import { toast } from 'react-toastify'
+
+const EditForm = () => {
 
 
-const Addjobs = () => {
+     const URL= 'http://localhost:9000/jobs'
 
-
-  const notify = () => toast('🦄 Wow so easy!', {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    });
-
-
-  const URL= 'http://localhost:9000/jobs'
-
-  const [jobData, setJobData] = useState({
-    title: '',
-    logo: '',
-    company: '',
-    position: '',
-    description: '',
-    salary: '',
-  })
-
-
-  const handleFormChange = (e) => {
-    const {name, value} = e.target;
-    setJobData({
-      ...jobData,
-       [name]: value
-      })
-  }
-
-
-
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    axios.post(URL, jobData).then((response) => {
-      setJobData(response.data);
-    });
-    notify();
-  };
-
-
-
+     const [jobData, setJobData] = useState({
+       title: '',
+       logo: '',
+       company: '',
+       position: '',
+       description: '',
+       salary: '',
+     })
+   
+   
+     const handleFormChange = (e) => {
+       const {name, value} = e.target;
+       setJobData({
+         ...jobData,
+          [name]: value
+         })
+     }
+   
+   
+   
+   
+     const handleFormSubmit = (e) => {
+       e.preventDefault();
+       axios.post(URL, jobData).then((response) => {
+         setJobData(response.data);
+       });
+     };
+   
 
 
 
   return (
-    <div className={style.Addjobs_form_wrapper}>
+     <div className={style.Addjobs_form_wrapper}>
           <form onSubmit={handleFormSubmit} className={style.addjob_form}>
                <label>
                     Your job title
@@ -95,4 +78,4 @@ const Addjobs = () => {
   )
 }
 
-export default Addjobs
+export default EditForm

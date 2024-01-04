@@ -1,8 +1,8 @@
 
 const NotFound = () => {
   return (
-    <div>
-        <img src={'https://cdn.dribbble.com/users/1175431/screenshots/6188233/media/507f015a7efd81cec270faf9c4f1aabd.gif'} alt="404 not found" />
+    <div style={{width: '100%', display: 'flex', justifyContent: 'center', height: '100vh' }}>
+        <img src={'https://i.postimg.cc/Z5XjhsCY/Oops-404-Error-with-a-broken-robot-rafiki.png'} alt="404 not found" />
     </div>
   )
 }

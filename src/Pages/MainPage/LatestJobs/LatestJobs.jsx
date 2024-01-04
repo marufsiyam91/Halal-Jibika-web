@@ -2,20 +2,16 @@
 import { CiHeart } from "react-icons/ci";
 import style from './LatestJobs.module.css'
 
-const LatestJobs = ({Item: { company, logo, position,}}) => {
-     console.log(logo)
+const LatestJobs = ({Item: { companyName, logo, position,}}) => {
   return (
     <div className={style.latest_item}>
 
       <div className={style.latest_job}>
-
-          <div className={style.jobfabourite}>
-              <span><CiHeart /></span>
-          </div>
+          <div></div>
 
           <div className={style.latestJobImage}>
               <img src={logo} alt="" />
-              <h3>{company}</h3>
+              <h3>{companyName}</h3>
             <small>{position}</small>
           </div>
 

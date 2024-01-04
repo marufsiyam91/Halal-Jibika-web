@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+
 import { Link } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
@@ -7,8 +8,7 @@ import style from "./Single_job.module.css";
 import axios from "axios";
 
 // eslint-disable-next-line react/prop-types
-const Single_job = ({job: { id, logo, companyName, position, description, salary }, setIsDataUpdating}) => {
-
+const Single_job = ({job, job: { id, logo, companyName, position, description, salary }, setIsDataUpdating}) => {
 
             const handleDelete = async () => {
               await axios.delete(`http://localhost:9000/jobs/${id}`);
@@ -16,12 +16,25 @@ const Single_job = ({job: { id, logo, companyName, position, description, salary
             };
 
 
+            const handleFavourite = (job) => {
+                  const favourite = job.favourite === undefined ? true : !job.favourite;
+                  setIsDataUpdating(prevState => !prevState);
+                  axios.put(`http://localhost:9000/jobs/${job.id}`, {
+                    ...job,
+                    favourite: favourite,
+                  })
+                        console.log(job.favourite)
+                }
+
+
+
+
   return (
     <div data-aos="fade-up" data-aos-duration="1000" className={style.jobCard}>
             <div className={style.jobcard_wrapper}>     
 
                   <div className={style.top_buttons}>
-                        <div><CiHeart /></div>
+                        <div onClick={()=>handleFavourite(job)}><CiHeart /></div>
                         <span onClick={handleDelete}><MdDeleteOutline /></span>
                   </div>
 
