@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
@@ -6,21 +7,21 @@ import style from "./Single_job.module.css";
 import axios from "axios";
 
 // eslint-disable-next-line react/prop-types
-const Single_job = ({job: { id, title, logo, companyName, position, description, salary }}) => {
-
+const Single_job = ({job: { id, logo, companyName, position, description, salary }, setIsDataUpdating}) => {
 
 
             const handleDelete = async () => {
-                  await axios.delete(`http://localhost:9000/jobs/${id}`);
-                  window.location.reload();
-                }
+              await axios.delete(`http://localhost:9000/jobs/${id}`);
+              setIsDataUpdating(prevState => !prevState);
+            };
+
 
   return (
-    <div className={style.jobCard}>
+    <div data-aos="fade-up" data-aos-duration="1000" className={style.jobCard}>
             <div className={style.jobcard_wrapper}>     
 
                   <div className={style.top_buttons}>
-                        <span><CiHeart /></span>
+                        <div><CiHeart /></div>
                         <span onClick={handleDelete}><MdDeleteOutline /></span>
                   </div>
 

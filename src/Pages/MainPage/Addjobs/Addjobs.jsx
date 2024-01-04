@@ -1,8 +1,23 @@
 import { useState } from 'react'
 import style from './Addjobs.module.css'
 import axios from 'axios'
+import { toast } from 'react-toastify'
+
 
 const Addjobs = () => {
+
+
+  const notify = () => toast('🦄 Wow so easy!', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
+
 
   const URL= 'http://localhost:9000/jobs'
 
@@ -33,6 +48,7 @@ const Addjobs = () => {
       // Assuming the response.data is the updated job data from the server
       setJobData(response.data);
     });
+    notify();
   };
 
 

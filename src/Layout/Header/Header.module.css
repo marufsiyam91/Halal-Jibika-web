@@ -50,17 +50,20 @@
 }
 
 
-.Navbar_wrapper  .main_menu_area ul{
+.main_menu_area ul{
      display: flex; 
      align-items: center;
 }
 
-.Navbar_wrapper .main_menu_area ul a{
-     list-style-type: none;
-     padding: 0 1.3125rem;
+.main_menu_area ul a{
      text-decoration: none;
-     color: #161718;
+     padding: 18px;
+     color: #212121;
      font-weight: 500;
+}
+
+.Navbar_wrapper  .main_menu_area ul .active{
+     color: tomato;
 }
 
 .sign_in_up_btns{

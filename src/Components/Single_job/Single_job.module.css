@@ -19,10 +19,12 @@
 .top_buttons{
   display: flex;
   justify-content: space-between;
+  font-size: 28px;
 }
 
-.top_buttons{
-  font-size: 28px;
+.favourite_color svg{
+  fill: red;
+  stroke: none;
 }
 
 .jobcard_content img{

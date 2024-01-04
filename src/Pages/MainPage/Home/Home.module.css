@@ -8,38 +8,35 @@
 
 .home_wrapper{
      width: 100%;
-     background-image: url('https://themezhub.net/workoo-live/workoo/assets/img/bgbanner-3.png');
-     background-position: center;
-     background-size: contain;
-     background-repeat: no-repeat;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
 }
 
-.hero_container{
-     padding: 60px;
+.hero_content{
+     padding: 60px 40px;
 }
+
 
 .hero_content_area h1{
      font-size: 48px;
      color: #211111;
 }
 
-.hero_content_area span{
-     color: rgb(62, 184, 255);
-}
 
 .hero_content_area{
-     width: 1300px;
-     height: 600px;
-     /* background: #a9d0ff92;
-     border-radius: 520px 10px 380px 38px; */
+     padding: 120px 0 0 60px;
+     width: 100%;
+     height: calc(100vh - 70px);
      display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
+     background: #fff;
+     justify-content: space-between;
+}
+
+.hero_content .hero_btn{
+     background: tomato;
+     color: #fff;
+}
+
+.hero_image img{
+     width: 80%;
 }
 
 .latest_job_wrapper{
@@ -81,7 +78,8 @@
 .home_latest_job_area{
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-evenly;
+     justify-content: flex-start;
+     gap: 2.8vw;
      padding: 45px 80px;
 
 }

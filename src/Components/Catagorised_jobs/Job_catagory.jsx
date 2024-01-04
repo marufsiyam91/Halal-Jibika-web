@@ -8,7 +8,7 @@ import style from './Job_catagory.module.css'
 
 const Job_catagory = () => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1500">
           <div className={style.job_catagory_wrapper}>
             <div className={style.catagory_headline}>
                 <h2>Job catagories</h2>

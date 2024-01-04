@@ -2,11 +2,15 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import style from './Jobs.module.css';
 import Single_job from '../../../Components/Single_job/Single_job';
+import Data from '../../../../public/Data/Data'
 
 const Jobs = () => {
   const Url = 'http://localhost:9000/jobs';
 
   const [jobData, setJobData] = useState([])
+  const [isDataUpdaitng, setIsDataUpdating] = useState(false)
+
+  const data = Data.jobs;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +24,7 @@ const Jobs = () => {
     };
 
     fetchData();
-  }, [Url]);
+  }, [ isDataUpdaitng]);
 
 
 
@@ -29,7 +33,7 @@ const Jobs = () => {
   return (
     <div className={style.jobs_wrapper}>
         {
-            jobData.map((job) =>  <Single_job key={job.id} job={job}/>)
+            jobData.map((job) =>  <Single_job setIsDataUpdating={setIsDataUpdating} key={job.id} job={job}/>)
         }
     </div>
   );

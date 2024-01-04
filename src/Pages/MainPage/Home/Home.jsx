@@ -15,11 +15,16 @@ const Home = () => {
       <div className={style.home_wrapper}>
         <div className={style.hero_container}>
           <div className={style.hero_content_area}>
-            <h1>
-              Jobs that you want <br /> You can apply for <span>your desired dream jobs.</span>
-            </h1>
+              <div   className={style.hero_content}>
+                <h1>HALAL JIBIKA</h1>
+                <h3>Discover a diverse range of job opportunities  that align with your values and beliefs.</h3>
 
-            <button onClick={() => navigate('/jobs')}>Explore more</button>
+                <button className={style.hero_btn} onClick={() => navigate('/jobs')}>Explore more</button>
+              </div>
+
+              <div data-aos="fade-up" data-aos-duration="1000"  className={style.hero_image}>
+                <img src={'https://i.postimg.cc/MKgZKdW3/3682888.jpg'} alt="Hero-Image" />
+              </div>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const Header = () => {
 
 
   return (
-    <div>
+    <div className={style.navbar_container}>
       <div className={style.Navbar_wrapper}>
         <div className={style.logo_area}>
           <span className={style.logo}>HALAL JIBIKA</span>
@@ -37,13 +37,18 @@ const Header = () => {
         </div>
         {isShow && (
           <div className={style.main_menu_area}>
-            <ul>
+            <ul id={style.activeLink}>
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"/jobs"}>Jobs</NavLink>
               <NavLink to={"/about"}>About</NavLink>
               <NavLink to={"/favourite"}>Favourite</NavLink>
               <NavLink to={"/contact"}>Contact</NavLink>
-               {user && <NavLink to={'/addjobs'}>Post Job</NavLink> }
+               {user &&
+               <>
+                <NavLink to={'/addjobs'}>Post Job</NavLink>
+                <NavLink to={'/applyedjobs'}>Applyed Jobs</NavLink>
+                </>
+                }
               <div className={style.sign_in_up_btns}>
               {user ?
                 (

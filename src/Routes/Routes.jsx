@@ -9,12 +9,14 @@ import NotFound from "../Pages/NotFound/NotFound"
 import About from '../Pages/MainPage/About/About'
 import Jobs from "../Pages/MainPage/Jobs/Jobs"
 import UserDetails from "../Pages/UserDetails/UserDetails"
+import ApplyedJobs from "../Pages/MainPage/ApplyedJobs/ApplyedJobs"
 import Addjobs from "../Pages/MainPage/Addjobs/Addjobs"
 
 const routes = createBrowserRouter([
      {
           path: '/',
           element: <App/>,
+          
           children: [
                {
                     path: '/',
@@ -24,10 +26,7 @@ const routes = createBrowserRouter([
                     path: '/jobs',
                     element: <Jobs/>,
                },
-               {
-                    path: '/addjobs',
-                    element: <Addjobs/>
-               },
+ 
                {
                     path: 'userDetails/:id',
                     element: <UserDetails/>,
@@ -43,8 +42,16 @@ const routes = createBrowserRouter([
                     element: <Contact/>
                },
                {
+                    path: '/addjobs',
+                    element: <Addjobs/>
+               },
+               {
                     path: '/favourite',
                     element: <Favourite/>
+               },
+               {
+                    path: 'applyedjobs',
+                    element: <ApplyedJobs/>
                },
                {
                     path: '/signin',
