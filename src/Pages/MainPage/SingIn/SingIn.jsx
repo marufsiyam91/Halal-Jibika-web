@@ -14,7 +14,7 @@ const SingIn = () => {
     const password = e.target.password.value
 
     signInWithEmailAndPassword(email, password)
-
+    console.log('logged')
   }
 
 
