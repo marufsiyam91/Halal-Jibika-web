@@ -1,12 +1,12 @@
 .favourite_job_wrapper{
-     width: 100%;
+      width: 100%;
      min-height: 100vh;
      display: flex;
      flex-wrap: wrap;
      padding: 80px 60px;
      justify-content: space-between;
      position: relative;
-     z-index: -1;
+
 }
 
 @media (max-width: 768px) {

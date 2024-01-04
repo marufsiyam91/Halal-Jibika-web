@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
@@ -6,15 +7,13 @@ import { FiEdit } from "react-icons/fi";
 import axios from 'axios';
 import style from './Favourite_job.module.css'
 
-const Favourite_job = ({favourite: { id, logo, companyName, position, description, salary}, setIsDataUpdating}) => {
+const Favourite_job = ({favourite: { id, logo, companyName, position, description, salary}, setIsUpdating, isUpdating}) => {
+console.log(id);
+  const handleDelete = async (id) => {
 
-  const handleDelete = async () => {
     await axios.delete(`http://localhost:9000/jobs/${id}`);
-    setIsDataUpdating(prevState => !prevState);
-    console.log('deleted')
+    setIsUpdating(prevState => !prevState);
   };
-
-
 
 
 
@@ -24,7 +23,7 @@ const Favourite_job = ({favourite: { id, logo, companyName, position, descriptio
 
           <div className={style.top_buttons}>
                 <div><CiHeart /></div>
-                <span onClick={handleDelete}><MdDeleteOutline /></span>
+                <div onClick={()=>handleDelete(id)}><MdDeleteOutline /></div>
           </div>
 
           <div className={style.jobcard_content}>

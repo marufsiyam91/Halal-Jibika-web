@@ -23,7 +23,7 @@ const Single_job = ({job, job: { id, logo, companyName, position, description, s
                     ...job,
                     favourite: favourite,
                   })
-                        console.log(job.favourite)
+
                 }
 
 

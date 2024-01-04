@@ -27,13 +27,13 @@ const Favourite = () => {
 
         const filtered = favourite.filter((job) => job.favourite === true)
 
-        console.log(filtered)
+
 
   return (
     <div className={style.favourite_job_wrapper}>
 
         {
-          filtered.map((favourite) => <Favourite_job key={favourite.id} favourite={favourite}/>)
+          filtered.map((favourite) => <Favourite_job key={favourite.id} setIsUpdating={setIsUpdating} favourite={favourite} isUpdating={isUpdating}/>)
         }
 
     </div>
@@ -41,3 +41,6 @@ const Favourite = () => {
 }
 
 export default Favourite
+
+
+
