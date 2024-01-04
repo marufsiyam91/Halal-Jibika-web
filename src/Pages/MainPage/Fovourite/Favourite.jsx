@@ -11,9 +11,9 @@ const Favourite = () => {
      const Url = 'http://localhost:9000/jobs';
 
      useEffect(() => {
-          const fetchData = async () => {
+          const fetchData = async (url) => {
             try {
-              const response = await axios.get(Url);
+              const response = await axios.get(url);
               const data = response.data;
               setFavourite(data)
               setIsUpdating(prev => !prev)
@@ -21,12 +21,12 @@ const Favourite = () => {
               console.error('Error fetching data:', error);
             }
           };
-      
-          fetchData();
-        }, [ isUpdating]);
+          fetchData(Url)
+        }, []);
 
-        const filtered = favourite.filter((job) => job === favourite)
+        const filtered = favourite.filter((job) => job.favourite === true)
 
+        console.log(filtered)
 
   return (
     <div>

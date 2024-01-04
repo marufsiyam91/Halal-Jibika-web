@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div>
       <div className={style.contact_page_wrapper}>
-        <div className={style.contact_top_area}>
+        <div data-aos="zoom-out-right" data-aos-duration="600" className={style.contact_top_area}>
           <h1>Contact Us</h1>
           <h3>Feel free to ask any question</h3>
 
@@ -35,7 +35,7 @@ const Contact = () => {
 
 
 
-        <div className={style.contact_info}>
+        <div data-aos="zoom-out-right" data-aos-duration="800" className={style.contact_info}>
           <h3>Get in touch</h3>
           <p>Get in touch via mail, call and direct address</p>
 

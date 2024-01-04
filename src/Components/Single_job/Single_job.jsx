@@ -30,7 +30,7 @@ const Single_job = ({job, job: { id, logo, companyName, position, description, s
 
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1000" className={style.jobCard}>
+    <div data-aos="fade-up" data-aos-duration="800" className={style.jobCard}>
             <div className={style.jobcard_wrapper}>     
 
                   <div className={style.top_buttons}>

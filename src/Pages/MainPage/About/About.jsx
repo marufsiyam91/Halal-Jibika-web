@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <div className={style.About_page_wrapper}>
-        <div className={style.About_page_content}>
+        <div data-aos="zoom-in-right" data-aos-duration="600" className={style.About_page_content}>
           <h1>About Halal Job</h1>
 
           <p>
@@ -38,7 +38,7 @@ const About = () => {
 
 
 
-        <div className={style.job_account}>
+        <div data-aos="zoom-in-up" data-aos-duration="800" className={style.job_account}>
           <div className={style.job_single_account}>
             <h2>4 Million</h2>
             <p>4 million daily active users</p>
@@ -59,11 +59,11 @@ const About = () => {
 
 
         <div className={style.about_work_process}>
-          <h2>How it works?</h2>
+          <h2  data-aos="zoom-in-up" data-aos-duration="800" >How it works?</h2>
 
-          <p>Job for anyone, anywhere</p>
+          <p  data-aos="zoom-in-up" data-aos-duration="800">Job for anyone, anywhere</p>
 
-          <div className={style.about_work_process_wrapper}>
+          <div  data-aos="zoom-in-up" data-aos-duration="1100"  className={style.about_work_process_wrapper}>
             <div className={style.about_work}>
               <img
                 src={

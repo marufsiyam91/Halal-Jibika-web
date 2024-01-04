@@ -34,35 +34,17 @@ const Home = () => {
   return (
     <div className={style.home_page}>
       <div className={style.home_wrapper}>
-        {/* <div className={style.hero_container}>
-          <div className={style.hero_content_area}>
-              <div   className={style.hero_content}>
-                <h1>HALAL JIBIKA</h1>
-                <h3>Discover a diverse range of job opportunities  that align with your values and beliefs.</h3>
+        <div  className={style.homePageContainer}>
+      <div data-aos="zoom-out-up" data-aos-duration="600" className={style.leftContent}>
+        <h1>Find your <br />
+        Job without any <br /> hassle.</h1>
 
-                <button className={style.hero_btn} onClick={() => navigate('/jobs')}>Explore more</button>
-              </div>
-
-              <div data-aos="fade-up" data-aos-duration="1000"  className={style.hero_image}>
-                <img src={'https://i.postimg.cc/R0wp9ggB/Design-inspiration-bro.png'} alt="Hero-Image" />
-              </div>
-          </div>
-        </div> */}
-        <div className={style.homePageContainer}>
-      <div className={style.leftContent}>
-        <h2>Halal Jobs Opportunities</h2>
-        <p>Discover meaningful Halal jobs connecting individuals with businesses that align with their values.</p>
-
-        <h2>Trusted by Many</h2>
-        <p>Join thousands who trust Halal Jibika, benefiting from our transparent and integrity-driven services.</p>
-
-        <h2>Service Statistics</h2>
-        <p>[X] people successfully employed, [Y] successful matches. Connecting talent with reputable Halal organizations.</p>
+        <h3>With the largest professional creative community online, <br /> simply search through from our website</h3>
 
         <button className={style.exploreButton}>Explore More</button>
       </div>
 
-      <div className={style.rightContent}>
+      <div data-aos="zoom-out-up" data-aos-duration="800" className={style.rightContent}>
         <img src="https://i.postimg.cc/R0wp9ggB/Design-inspiration-bro.png" alt="Halal Jobs Image" />
       </div>
     </div>

@@ -1,3 +1,11 @@
+.navbar_container{
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 70px;
+     background: #ffffffa1;
+}
+
 .Navbar_wrapper{
      height: 70px;
      display: flex;
@@ -58,7 +66,7 @@
 .main_menu_area ul a{
      text-decoration: none;
      padding: 18px;
-     color: #212121;
+     color: #000;
      font-weight: 500;
 }
 
@@ -123,14 +131,17 @@
 
 
      .main_menu_area{
-          padding: 25px;
-          width: 70vw;
-          height: 45vh;
+          padding: 10px;
+          width: 100vw;
+          height: calc(100vh - 70px);
           background: #212121;
           position: absolute;
           top: 70px;
           right: 0;
           border-radius: 0 0 0 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
      }
 
      .menubar_area label{
@@ -148,7 +159,7 @@
      .Navbar_wrapper .main_menu_area ul a{
           text-align: end;
           color: #fff;
-          margin-bottom: 8px;
+          margin-bottom: 2px;
 
      }
 
@@ -158,12 +169,25 @@
           justify-content: center;
      }
 
-     .sign_in_up_btns #signin_btn{
+     .sign_in_up_btns .logout_btn{
           padding: 8px 18px;
+          background: #fff;
+          color: #212121;
      }
 
      .logo_area .logo{
           font-size: 1rem;
+     }
+
+     .sign_in_up_btns{
+          display: flex;
+          padding: 0 10px;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+     }
+
+     .sign_in_up_btns img{
+          display: none;
      }
 }
 

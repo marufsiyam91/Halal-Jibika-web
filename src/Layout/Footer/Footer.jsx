@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <div>
           <div className={style.footer_wrapper}>
-            <div className={style.footer_content_container}>
-              <div className={style.footer_content}>
+            <div  className={style.footer_content_container}>
+              <div data-aos="fade-right" data-aos-duration="1000" className={style.footer_content}>
                 <h1>Halal Jibika</h1>
                 <p>Morolpara bazar, Chandertek <br /> Badda, Dhaka</p>
 
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           </div>
 
-          <div className={style.footer_content_links}>
+          <div data-aos="fade-up"  data-aos-duration="800" className={style.footer_content_links}>
             <h3>USEFUL LINKS</h3>
             <p>About us</p>
             <p>FAQ</p>
@@ -39,7 +39,7 @@ const Footer = () => {
             <p>Log in</p>
           </div>
 
-          <div className={style.footer_content_developers}>
+          <div data-aos="fade-up" data-aos-duration="800" className={style.footer_content_developers}>
             <h3>DEVELOPERS</h3>
             <p>Tearms of use</p>
             <p>Tearms & condition</p>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
 
-          <div className={style.footer_content_support}>
+          <div data-aos="fade-up" data-aos-duration="800" className={style.footer_content_support}>
             <h3>SUPPORTS</h3>
             <p>Booking</p>
             <p>Stays</p>
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
 
-          <div className={style.footer_content_employee}>
+          <div data-aos="fade-left" data-aos-duration="800"  className={style.footer_content_employee}>
             <h3>FOR EMPLOYEE</h3>
             <p>Browse candidates</p>
             <p>Jobs page</p>

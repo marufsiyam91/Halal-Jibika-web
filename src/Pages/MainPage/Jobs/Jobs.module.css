@@ -5,3 +5,10 @@
      padding: 60px;
      justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+     .jobs_wrapper{
+          padding: 60px 20px;
+          justify-content: center;
+     }
+}

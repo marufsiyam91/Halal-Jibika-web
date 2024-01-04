@@ -1,3 +1,8 @@
+.contact_page_wrapper{
+     position: relative;
+     z-index: -1;
+}
+
 .contact_top_area{
      height: 220px;
      background: rgb(149, 229, 255);
@@ -73,11 +78,11 @@
 .form_wrapper{
      position: absolute;
      right: 160px;
-     top: 220px;
+     top: 160px;
      width: 480px;
      height: 580px;
      padding: 25px 20px;
-     background: #ffffff63;
+     background: #dfdfdfc6;
      border-radius: 10px;
 }
 

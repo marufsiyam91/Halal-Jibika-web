@@ -1,5 +1,7 @@
 .About_page_wrapper{
      padding: 40px 80px;
+     position: relative;
+     z-index: -1;
 }
 
 .About_page_content h1{
@@ -53,7 +55,7 @@
      padding: 28px;
      width: 420px;
      height: 360px;
-     background: #ffffff5e;
+     background: #c1c1c1c5;
      border-radius: 15px;
 }
 
