@@ -11,7 +11,8 @@ const SignUp = () => {
   //signUp with email and password
   const [
     createUserWithEmailAndPassword,
-    
+    loading,
+    error
   ] = useCreateUserWithEmailAndPassword(auth);
 
 
@@ -27,6 +28,7 @@ const SignUp = () => {
       alert("Passwords do not match")
     } else {
       createUserWithEmailAndPassword(email, password)
+      
     }
   }
 
@@ -38,6 +40,7 @@ const SignUp = () => {
 
   const handleGoogleSignup = () => {
     signInWithGoogle()
+
   }
 
   const handleGithubSignup = () => {

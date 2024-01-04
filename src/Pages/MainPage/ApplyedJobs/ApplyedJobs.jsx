@@ -31,9 +31,14 @@ const ApplyedJobs = () => {
         console.log(filteredJobs)
   return (
     <div className={style.applyedpage}>
+
+
         {
           filteredJobs.map((applyed) => <ApplyedJob key={applyed.id} applyed={applyed}/>)
         }
+
+
+        
     </div>
   )
 }

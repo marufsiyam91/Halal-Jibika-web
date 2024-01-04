@@ -35,3 +35,12 @@
 
 
 
+@media (max-width: 768px) {
+     .Addjobs_form_wrapper .addjob_form{
+          width: 90vw;
+     }
+
+     .Addjobs_form_wrapper .addjob_form input{
+          width: 76vw;
+     }
+}

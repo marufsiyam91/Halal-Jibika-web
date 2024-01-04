@@ -1,7 +1,24 @@
 import { NavLink } from 'react-router-dom'
 import style from './SignIn.module.css'
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from '../../../Config/Firebase';
 
 const SingIn = () => {
+
+
+  const [ signInWithEmailAndPassword ] = useSignInWithEmailAndPassword(auth);
+
+  const handleSignInSubmit = (e) => {
+    e.preventDefault()
+    const email = e.target.email.value
+    const password = e.target.password.value
+
+    signInWithEmailAndPassword(email, password)
+
+  }
+
+
+
   return (
     <div>
           <div className={style.sigin_form_container}>
@@ -19,7 +36,7 @@ const SingIn = () => {
               </label>
 
 
-              <button className={style.login_btn}>
+              <button onClick={handleSignInSubmit} className={style.login_btn}>
                 Log in
               </button>
 

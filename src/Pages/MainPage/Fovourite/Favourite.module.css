@@ -1,15 +1,17 @@
-.jobs_wrapper{
+.favourite_job_wrapper{
      width: 100%;
      min-height: 100vh;
      display: flex;
      flex-wrap: wrap;
-     padding: 60px;
+     padding: 80px 60px;
      justify-content: space-between;
+     position: relative;
+     z-index: -1;
 }
 
 @media (max-width: 768px) {
-     .jobs_wrapper{
-          padding: 60px 20px;
+     .favourite_job_wrapper{
+          padding: 40px 20px;
           justify-content: center;
      }
 }

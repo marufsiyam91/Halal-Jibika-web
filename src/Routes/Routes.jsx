@@ -54,6 +54,8 @@ const routes = createBrowserRouter([
                {
                     path: '/favourite',
                     element: <Favourite/>,
+                    loader:({params}) =>
+                    fetch(`http://localhost:9000/jobs/${params.id}`)
                },
                {
                     path: 'applyedjobs',

@@ -11,6 +11,7 @@ const Favourite_job = ({favourite: { id, logo, companyName, position, descriptio
   const handleDelete = async () => {
     await axios.delete(`http://localhost:9000/jobs/${id}`);
     setIsDataUpdating(prevState => !prevState);
+    console.log('deleted')
   };
 
 

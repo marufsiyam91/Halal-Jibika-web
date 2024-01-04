@@ -7,17 +7,6 @@ import { toast } from 'react-toastify'
 const Addjobs = () => {
 
 
-  const notify = () => toast('🦄 Wow so easy!', {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-    });
-
 
   const URL= 'http://localhost:9000/jobs'
 
@@ -46,8 +35,8 @@ const Addjobs = () => {
     e.preventDefault();
     axios.post(URL, jobData).then((response) => {
       setJobData(response.data);
-    });
-    notify();
+    })
+    
   };
 
 

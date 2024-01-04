@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Favourite_job from "../../../Components/Favourite_job/Favourite_job";
+import style from './Favourite.module.css'
 
 const Favourite = () => {
 
@@ -22,17 +23,19 @@ const Favourite = () => {
             }
           };
           fetchData(Url)
-        }, []);
+        }, [isUpdating]);
 
         const filtered = favourite.filter((job) => job.favourite === true)
 
         console.log(filtered)
 
   return (
-    <div>
-          {
-            filtered.map((favourite) => <Favourite_job key={favourite.id} favourite={favourite}/>)
-          }
+    <div className={style.favourite_job_wrapper}>
+
+        {
+          filtered.map((favourite) => <Favourite_job key={favourite.id} favourite={favourite}/>)
+        }
+
     </div>
   )
 }

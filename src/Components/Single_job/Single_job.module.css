@@ -64,5 +64,10 @@
 @media (max-width: 768px) {
     .jobCard{
       width: 86vw;
+      min-height: 450px;
+    }
+
+    .jobcard_content img{
+      width: 15vw;
     }
 }

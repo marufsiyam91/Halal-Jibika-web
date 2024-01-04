@@ -6,7 +6,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     padding: 120px;
+     padding: 120px 0;
 }
 
 .jobDetails img{
@@ -76,3 +76,14 @@
      font-size: 18px;
    }
    
+
+
+
+   @media (max-width: 768px) {
+    .jobCard{
+      width: 86vw;
+    }
+    .jobcard_wrapper{
+      padding: 60px auto;
+    }
+   }
