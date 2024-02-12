@@ -31,6 +31,12 @@ const Home = () => {
   }, [ isUpdating]);
 
 
+  const handleNavigate = () => {
+    console.log('button clicked')
+    navigate('/jobs')
+  }
+
+
   return (
     <div className={style.home_page}>
       <div className={style.home_wrapper}>
@@ -41,7 +47,7 @@ const Home = () => {
 
         <h3>With the largest professional creative community online, <br /> simply search through from our website</h3>
 
-        <button className={style.exploreButton}>Explore More</button>
+        <button onClick={handleNavigate} className={style.exploreButton}>Explore More</button>
       </div>
 
       <div data-aos="zoom-out-up" data-aos-duration="800" className={style.rightContent}>

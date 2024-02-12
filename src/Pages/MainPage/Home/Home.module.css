@@ -11,7 +11,7 @@
 }
 
 .leftContent h1{
-     font-size: 4vw;
+     font-size: 3.5vw;
      font-weight: 600;
 }
 
@@ -94,14 +94,14 @@
    }
    
    .leftContent {
-     position: relative;
-     z-index: -1;
+     /* position: relative;
+     z-index: -1; */
      padding:60px;
    }
    
    .rightContent {
-     position: relative;
-     z-index: -1;
+     /* position: relative;
+     z-index: -1; */
      padding: 20px;
    }
 

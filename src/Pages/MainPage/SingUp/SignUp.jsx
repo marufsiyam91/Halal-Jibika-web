@@ -4,6 +4,9 @@ import { FaGithub } from "react-icons/fa";
 import style from './SingUp.module.css'
 import { auth } from '../../../Config/Firebase';
 import { useCreateUserWithEmailAndPassword,  useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+
 
 
 const SignUp = () => {
@@ -11,25 +14,43 @@ const SignUp = () => {
   //signUp with email and password
   const [
     createUserWithEmailAndPassword,
-    loading,
-    error
   ] = useCreateUserWithEmailAndPassword(auth);
+
+  const [entredValue, setEntredValue] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  })
+
+  const handleChange = (identifier, value) => {
+    setEntredValue(prevValue => ({
+      ...prevValue,
+      [identifier]: value 
+    }))
+  }
+
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const fullName = e.target.fullName.value
-    const email = e.target.email.value
-    const password = e.target.password.value
-    const confirmPassword = e.target.confirmPassword.value
-
-
-    if (password!== confirmPassword) {
+    // console.log(entredValue.email, entredValue.password)
+    if (entredValue.password!== entredValue.confirmPassword) {
       alert("Passwords do not match")
     } else {
-      createUserWithEmailAndPassword(email, password)
-      
+      createUserWithEmailAndPassword(entredValue.email, entredValue.password)
     }
+
+    setEntredValue({
+      name: '',
+      email: '',
+      password: '',
+      confirmPassword: ''
+    })
+  }
+
+  const handleToast = () => {
+    toast.success('successfully signed up')
   }
 
 
@@ -61,26 +82,26 @@ const SignUp = () => {
               
               <label>
                 Full Name
-                <input type="text" name="fullName"  placeholder="Your Full Name Here"/>
+                <input onChange={(e) => handleChange('email', e.target.value)} type="text" name="fullName"  placeholder="Your Full Name Here"/>
               </label>
 
               <label>
                 Email
-                <input type="email" name="email"  placeholder="Your Email"/>
+                <input onChange={(e) => handleChange('email', e.target.value)} type="email" name="email"  placeholder="Your Email"/>
               </label>
 
               <label>
                 Password
-                <input type="password" name="password"  placeholder="New password"/>
+                <input onChange={(e) => handleChange('password', e.target.value)} type="password" name="password"  placeholder="New password"/>
               </label>
 
               <label>
                 Confirm Password
-                <input type="password" name="confirmPassword"  placeholder="Confirm password"/>
+                <input onChange={(e) => handleChange('confirmPassword', e.target.value)} type="password" name="confirmPassword"  placeholder="Confirm password"/>
               </label>
 
 
-              <button  className={style.create_account_btn}>Create Account</button>
+              <button onClick={handleToast}  className={style.create_account_btn}>Create Account</button>
 
               <div className={style.signup_google_github}>
               

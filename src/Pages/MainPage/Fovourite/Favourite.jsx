@@ -33,7 +33,12 @@ const Favourite = () => {
     <div className={style.favourite_job_wrapper}>
 
         {
-          filtered.map((favourite) => <Favourite_job key={favourite.id} setIsUpdating={setIsUpdating} favourite={favourite} isUpdating={isUpdating}/>)
+          filtered ?
+          (filtered.map((favourite) => <Favourite_job key={favourite.id} setIsUpdating={setIsUpdating} favourite={favourite} isUpdating={isUpdating}/>))
+          :
+          (<div>
+              <h2>No Favourite jobs are added yet</h2>
+          </div>)
         }
 
     </div>

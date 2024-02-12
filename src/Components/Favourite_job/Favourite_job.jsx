@@ -8,6 +8,10 @@ import axios from 'axios';
 import style from './Favourite_job.module.css'
 
 const Favourite_job = ({favourite: { id, logo, companyName, position, description, salary}, setIsUpdating, isUpdating}) => {
+
+
+
+
 console.log(id);
   const handleDelete = async (id) => {
 

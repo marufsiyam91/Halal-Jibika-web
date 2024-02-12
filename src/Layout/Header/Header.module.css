@@ -3,7 +3,7 @@
      top: 0;
      width: 100%;
      height: 70px;
-     background: #ffffffa1;
+     background: #ffffff;
 }
 
 .Navbar_wrapper{
@@ -38,7 +38,7 @@
      font-family: 'Montserrat Alternates', sans-serif;
      font-family: 'Montserrat', sans-serif;
      font-style: italic;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      font-weight: 600;
      color: rgb(255, 255, 255);
      cursor: pointer;
@@ -68,6 +68,11 @@
      padding: 18px;
      color: #000;
      font-weight: 500;
+     font-size: .9rem;
+}
+
+.main_menu_area ul a:active {
+     color: blue !important;
 }
 
 .Navbar_wrapper  .main_menu_area ul .active{

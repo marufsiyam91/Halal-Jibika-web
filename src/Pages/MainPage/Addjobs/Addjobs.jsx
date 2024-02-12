@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import style from './Addjobs.module.css'
 import axios from 'axios'
-import { toast } from 'react-toastify'
 
 
 const Addjobs = () => {
 
 
 
+
   const URL= 'http://localhost:9000/jobs'
+
+
+
 
   const [jobData, setJobData] = useState({
     title: '',
@@ -36,7 +39,6 @@ const Addjobs = () => {
     axios.post(URL, jobData).then((response) => {
       setJobData(response.data);
     })
-    
   };
 
 
