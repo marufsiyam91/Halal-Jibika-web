@@ -34,7 +34,7 @@ const Single_job = ({job, job: { id, logo, companyName, position, description, s
 
                   else{
                   try {
-                      await axios.delete(`http://localhost:9000/jobs/${id}`);
+                      await axios.delete(`https://jobs-info.onrender.com/data/${id}`);
                       setIsDataUpdating(prevState => !prevState);
               
                       // Display a success message using toast
@@ -51,7 +51,7 @@ const Single_job = ({job, job: { id, logo, companyName, position, description, s
                   
                   const favourite = job.favourite === undefined ? true : !job.favourite;
                   setIsDataUpdating(prevState => !prevState);
-                  axios.put(`http://localhost:9000/jobs/${job.id}`, {
+                  axios.put(`https://jobs-info.onrender.com/data/${job.id}`, {
                     ...job,
                     favourite: favourite,
                   })

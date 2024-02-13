@@ -7,12 +7,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const Home = () => {
+  const Url = "https://jobs-info.onrender.com/data";
+  const [data, setData] = useState([]);
+  const [isUpdating, setIsUpdating] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const Url = 'http://localhost:9000/jobs'
-  const [data, setData] = useState([])
-  const [isUpdating, setIsUpdating] = useState([])
-  
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // const data = Data.jobs
 
   useEffect(() => {
@@ -20,56 +20,78 @@ const Home = () => {
       try {
         const response = await axios.get(Url);
         const data = response.data;
-        setData(data)
-        setIsUpdating(prev => !prev)
+        setData(data);
+        // setIsUpdating(prev => !prev)
+        setIsLoading(!isLoading);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
-  }, [ isUpdating]);
+  }, [isUpdating]);
 
+  console.log(data);
 
   const handleNavigate = () => {
-    console.log('button clicked')
-    navigate('/jobs')
-  }
-
+    console.log("button clicked");
+    navigate("/jobs");
+  };
 
   return (
     <div className={style.home_page}>
       <div className={style.home_wrapper}>
-        <div  className={style.homePageContainer}>
-      <div data-aos="zoom-out-up" data-aos-duration="600" className={style.leftContent}>
-        <h1>Find your <br />
-        Job without any <br /> hassle.</h1>
+        <div className={style.homePageContainer}>
+          <div
+            /* data-aos="zoom-out-up" data-aos-duration="600" */ className={
+              style.leftContent
+            }
+          >
+            <h1>
+              Find your <br />
+              Job without any <br /> hassle.
+            </h1>
 
-        <h3>With the largest professional creative community online, <br /> simply search through from our website</h3>
+            <h3>
+              With the largest professional creative community online, <br />{" "}
+              simply search through from our website
+            </h3>
 
-        <button onClick={handleNavigate} className={style.exploreButton}>Explore More</button>
+            <button onClick={handleNavigate} className={style.exploreButton}>
+              Explore More
+            </button>
+          </div>
+
+          <div
+            /* data-aos="zoom-out-up" data-aos-duration="800" */ className={
+              style.rightContent
+            }
+          >
+            <img
+              src="https://i.postimg.cc/R0wp9ggB/Design-inspiration-bro.png"
+              alt="Halal Jobs Image"
+            />
+          </div>
+        </div>
       </div>
 
-      <div data-aos="zoom-out-up" data-aos-duration="800" className={style.rightContent}>
-        <img src="https://i.postimg.cc/R0wp9ggB/Design-inspiration-bro.png" alt="Halal Jobs Image" />
-      </div>
-    </div>
-      </div>
-
-      <Job_catagory/>
-
+      <Job_catagory />
 
       <div className={style.latest_job_wrapper}>
-      <h2>5205 Latest jobs are added recently</h2>
+        <h2>5205 Latest jobs are added recently</h2>
         <div className={style.home_latest_job_area}>
-              {
-                data.slice(0, 8).map((item) => <LatestJobs key={item.id} Item={item}/>)
-              }
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            data.jobs
+              .slice(0, 9)
+              .map((item) => <LatestJobs key={item.id} Item={item} />)
+          )}
         </div>
-        <button onClick={() => navigate('/jobs')} className={style.alljobs_btn}>Explore all jobs</button>
+        <button onClick={() => navigate("/jobs")} className={style.alljobs_btn}>
+          Explore all jobs
+        </button>
       </div>
-     
-
     </div>
   );
 };

@@ -3,7 +3,7 @@ import style from "./About.module.css";
 
 const About = () => {
   return (
-    <div>
+    <div className={style.about_page_container}>
       <div className={style.About_page_wrapper}>
         <div data-aos="zoom-in-right" data-aos-duration="600" className={style.About_page_content}>
           <h1>About Halal Job</h1>

@@ -32,12 +32,12 @@ const routes = createBrowserRouter([
                     path: 'userDetails/:id',
                     element: <UserDetails/>,
                     loader: ({params}) => 
-                    fetch(`http://localhost:9000/jobs/${params.id}`)
+                    fetch(`https://jobs-info.onrender.com/data/${params.id}`)
                },
                {
                     element: <Single_job/>,
                     loader:({params}) =>
-                    fetch(`http://localhost:9000/jobs/${params.id}`)
+                    fetch(`https://jobs-info.onrender.com/data/${params.id}`)
                },
                {
                     path: '/about',

@@ -15,15 +15,17 @@ const UserDetails = () => {
     title,
     expireDate,
   } = data;
+  
 
   const handleApplyed = (data) => {
     const status = data.status === undefined ? true : !data.status;
 
-    axios.put(`http://localhost:9000/jobs/${data.id}`, {
+    axios.put(`https://jobs-info.onrender.com/data/${data.id}`, {
       ...data,
       status: status,
     });
   };
+  
 
   return (
     <div className={style.jobcard_wrapper}>
@@ -35,14 +37,14 @@ const UserDetails = () => {
         <div className={style.jobDetails}>
           <img src={logo} alt="company image" />
           <p>
-            <strong>Location:</strong>
+            <strong>Location: </strong>
             {location}
           </p>
           <p>
             <strong>Job Type:</strong> Full-time
           </p>
           <p>
-            <strong>Salary:</strong>
+            <strong>Salary: </strong>
             {salary}
           </p>
           <p>

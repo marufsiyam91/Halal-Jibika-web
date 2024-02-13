@@ -1,9 +1,7 @@
 .jobCard{
-  width: 43vw;
-  height: 380px;
+  max-height: 420px;
   background: rgba(116, 220, 255, 0.458);
   border-radius: 12px;
-  margin-bottom: 3vw;
   padding: 25px;
 }
 

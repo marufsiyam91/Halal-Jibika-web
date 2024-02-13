@@ -1,0 +1,28 @@
+.contact_info_container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contact_info{
+    padding: 20px 80px;
+    height: 600px;
+}
+
+.contact_info_wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.contact_icon{
+    width: 40px;
+    height: 40px;
+    background: #d1d1d187;
+    color: rgb(0, 144, 233);
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}

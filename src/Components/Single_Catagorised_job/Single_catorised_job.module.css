@@ -1,0 +1,47 @@
+.catagory{
+    height: 300px;
+    background: #fff;
+    border-radius: 3rem;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    border: 1px solid #94949481;
+    margin-bottom: 5rem;
+    box-shadow: rgba(79, 81, 95, 0.1) 0px 6px 0px;
+}
+
+.catagory:hover{
+    background: rgba(102, 217, 255, 0.689);
+    color: #fff;
+}
+
+
+
+.catagory p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 105px;
+    border-radius: 0 5rem 5rem;
+    color: #fff;
+    font-size: 40px;
+    background: #69c6ff85;
+
+}
+
+.catagory:hover  p{
+    background: #fff;
+    color: #212121;
+}
+
+.catagory h4{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.catagory h5{
+    padding:  8px;
+    font-weight: 500;
+}

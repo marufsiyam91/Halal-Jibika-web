@@ -2,22 +2,24 @@
 
 
 .home_page {
-     width: 100%;
+     max-width: 1280px;
+     margin: 0 auto;
      height: 100%;
 }
 
 .home_wrapper{
-     width: 100%;
+     width: 90%;
+     margin: 0 auto;
 }
 
 .leftContent h1{
-     font-size: 3.5vw;
+     font-size: 2.5rem;
      font-weight: 600;
 }
 
 .leftContent h3{
-     font-size: 1.2vw;
-     font-weight: 600;
+     font-size: 1rem;
+     font-weight: 400;
      color: #212121;
      margin: 25px 0 15px 0;
 }
@@ -47,7 +49,7 @@
 .latest_job_wrapper h2{
      text-align: center;
      font-size: 38px;
-     margin: 90px 0 25px 0;
+     margin: 5rem 0;
 }
 
 .hero_content_area  button{
@@ -64,12 +66,12 @@
 
 
 .home_latest_job_area{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: flex-start;
-     gap: 2.8vw;
-     padding: 45px 80px;
-
+     width: 90%;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     /* gap: 4.5rem; */
+     gap: 2rem;
 }
 
 
@@ -91,19 +93,13 @@
      display: flex;
      height: 100vh;
      align-items: center;
+     justify-content: space-between;
    }
    
    .leftContent {
-     /* position: relative;
-     z-index: -1; */
-     padding:60px;
+     width: 50%;
    }
    
-   .rightContent {
-     /* position: relative;
-     z-index: -1; */
-     padding: 20px;
-   }
 
      .rightContent img{
           width: 92%;
@@ -144,6 +140,9 @@
 
 
 @media (max-width: 768px) {
+     .leftContent {
+          width: 100%;
+        }
      .home_wrapper{
           background-size: 260vw ;
      }
@@ -173,9 +172,15 @@
           margin-bottom: 5vh;
      }
 
-     .home_latest_job_area{
+     /* .home_latest_job_area{
           flex-direction: column;
           padding: 30px;
+     } */
+
+     .home_latest_job_area{
+          grid-template-columns: repeat(1, 1fr);
+          margin: 0 auto;
+          align-content: center;
      }
 
      .homePageContainer{

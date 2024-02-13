@@ -1,0 +1,49 @@
+
+.contact_top_container{
+    height: 220px;
+    background: rgb(149, 229, 255);
+}
+
+.contact_top_wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 0 0 80px;
+}
+
+.social_icons{
+    margin-top: 35px;
+}
+
+.social_icons ul{
+    display: flex;
+}
+
+.social_icons ul li{
+    list-style-type: none;
+    margin-right: 18px;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    background: #ffffff4b;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.social_icons ul li:hover{
+    color: rgba(11, 149, 255, 0.866);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .contact_top_wrapper{
+        padding: 60px 40px;
+    }
+}

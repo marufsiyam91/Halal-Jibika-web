@@ -8,15 +8,14 @@ const Jobs = () => {
 
   const [jobData, setJobData] = useState([]);
   const [isDataUpdating, setIsDataUpdating] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
-
+  const [isLoading, setIsLoading] = useState(true); 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(Url);
         const data = response.data;
         setJobData(data);
-        setIsLoading(false); // Update loading state when data is fetched
+        setIsLoading(false); 
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -27,7 +26,7 @@ const Jobs = () => {
 
   return (
     <div className={style.jobs_wrapper}>
-      {isLoading ? ( // Render loading indicator if data is still loading
+      {isLoading ? ( 
         <p>Loading...</p>
       ) : (
         jobData.jobs.map((job) => <Single_job setIsDataUpdating={setIsDataUpdating} key={job.id} job={job} />)

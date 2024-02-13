@@ -1,0 +1,133 @@
+.contact_info_container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contact_info{
+    padding: 20px 80px;
+    height: 600px;
+}
+
+.contact_address, .contact_mail, .contact_phone{
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.contact_icon{
+    width: 40px;
+    height: 40px;
+    background: #d1d1d187;
+    color: rgb(0, 144, 233);
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.contact_info_wrapper{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.contact_form{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.form_wrapper{
+    position: relative;
+    top: -50px;
+    width: 480px;
+    height: 580px;
+    padding: 25px 20px;
+    background: #ffffff34;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+
+.identity_info input{
+    width: 200px;
+}
+
+.contact_form input{
+    padding: 14px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 440px;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact_form button{
+    padding: 7px  16px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(59, 206, 255, 0.747);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .contact_info_wrapper{
+        flex-direction: column;
+        height: 980px;
+    }
+
+    .contact_top_area{
+         padding: 2rem ;
+    }
+
+    .contact_info{
+         padding: 20px 40px;
+    }
+
+    .contact_form{
+         width: 95 vw;
+    }
+
+    .contact_form input{
+         width: 86vw;
+    }
+
+    textarea{
+         width: 86vw;
+    }
+
+    .form_wrapper{
+         left: 50%;
+         transform: translateX(-50%);
+         width: 95vw;
+         background: #ecececbc;
+    }
+}

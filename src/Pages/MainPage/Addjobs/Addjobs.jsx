@@ -8,7 +8,7 @@ const Addjobs = () => {
 
 
 
-  const URL= 'http://localhost:9000/jobs'
+  const URL= 'https://jobs-info.onrender.com/data'
 
 
 

@@ -1,8 +1,10 @@
 .jobs_wrapper{
-     width: 100%;
+     max-width: 1280px;
+     margin: 0 auto;
      min-height: 100vh;
-     display: flex;
-     flex-wrap: wrap;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1.5rem;
      padding: 60px;
      justify-content: space-between;
 }
