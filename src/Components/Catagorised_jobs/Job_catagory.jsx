@@ -7,8 +7,11 @@ import {  Pagination, A11y, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/grid"
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+
 
 const Job_catagory = () => {
   return (
