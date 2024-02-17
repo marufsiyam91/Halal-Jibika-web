@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import style from './Info.module.css'
 
 const Info = ({icon, title, info,extraInfo}) => {

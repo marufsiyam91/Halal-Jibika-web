@@ -2,7 +2,7 @@ import style from "./Contact_info.module.css";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { BsTelephoneFill } from "react-icons/bs";
-import Info from "./info";
+import Info from "./Info/Info";
 
 const Contact_info = () => {
   return (
