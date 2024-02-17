@@ -27,6 +27,16 @@ const Job_catagory = () => {
 
         <div className={style.job_catagories_wrapper}>
           <Swiper
+           breakpoints={{
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 4,
+            },
+            // when window width is < 768px
+            320: {
+              slidesPerView: 1,
+            },
+          }}
             modules={[ Pagination, A11y, Autoplay]}
             spaceBetween={50}
             autoplay
