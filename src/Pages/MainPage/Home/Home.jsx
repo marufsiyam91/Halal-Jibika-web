@@ -5,6 +5,7 @@ import Job_catagory from "../../../Components/Catagorised_jobs/Job_catagory";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Hero_compo from "../../../Components/Hero_compo/Hero_compo";
 
 const Home = () => {
   const Url = "https://jobs-info.onrender.com/data";
@@ -40,40 +41,8 @@ const Home = () => {
 
   return (
     <div className={style.home_page}>
-      <div className={style.home_wrapper}>
-        <div className={style.homePageContainer}>
-          <div
-            /* data-aos="zoom-out-up" data-aos-duration="600" */ className={
-              style.leftContent
-            }
-          >
-            <h1>
-              Find your <br />
-              Job without any <br /> hassle.
-            </h1>
 
-            <h3>
-              With the largest professional creative community online, <br />{" "}
-              simply search through from our website
-            </h3>
-
-            <button onClick={handleNavigate} className={style.exploreButton}>
-              Explore More
-            </button>
-          </div>
-
-          <div
-            /* data-aos="zoom-out-up" data-aos-duration="800" */ className={
-              style.rightContent
-            }
-          >
-            <img
-              src="https://i.postimg.cc/R0wp9ggB/Design-inspiration-bro.png"
-              alt="Halal Jobs Image"
-            />
-          </div>
-        </div>
-      </div>
+        <Hero_compo/>
 
       <Job_catagory />
 

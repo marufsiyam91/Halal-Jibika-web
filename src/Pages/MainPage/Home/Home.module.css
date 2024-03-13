@@ -8,25 +8,70 @@
 }
 
 .home_wrapper{
-     width: 90%;
+     width: 95%;
      margin: 0 auto;
 }
 
-.leftContent h1{
-     font-size: 2.5rem;
-     font-weight: 600;
-}
 
-.leftContent h3{
-     font-size: 1rem;
-     font-weight: 400;
-     color: #212121;
-     margin: 25px 0 15px 0;
-}
 
-.hero_content{
-     padding: 60px 80px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .latest_job_wrapper{
@@ -52,18 +97,6 @@
      margin: 5rem 0;
 }
 
-.hero_content_area  button{
-     padding: 10px 18px;
-     font-family: 'Montserrat', sans-serif;
-     border: none;
-     outline: none;
-     font-size: 18px;
-     font-weight: 600;
-     border-radius: 6px;
-     background: #fff;
-     margin-top: 30px;
-}
-
 
 .home_latest_job_area{
      width: 90%;
@@ -78,104 +111,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/* Module CSS (HomePage.module.css) */
-
-.homePageContainer {
-     display: flex;
-     height: 100vh;
-     align-items: center;
-     justify-content: space-between;
-   }
-   
-   .leftContent {
-     width: 50%;
-   }
-   
-
-     .rightContent img{
-          width: 92%;
-     } 
-   
-   .exploreButton {
-     background-color: #56b8ff;
-     color: white;
-     border: none;
-     padding: 10px 20px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
-     margin: 4px 2px;
-     cursor: pointer;
-     font-family: 'Montserrat', sans-serif;
-     border-radius: 12px;
-   }
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
-     .leftContent {
-          width: 100%;
-        }
-     .home_wrapper{
-          background-size: 260vw ;
-     }
 
-     .hero_content{
-          padding: 20px;
-     }
-
-     .leftContent{
-          padding: 80px 40px;
-     }
-
-     .leftContent h1{
-          font-size: 6.7vw;
-     }
-
-     .leftContent h3{
-          font-size: 2.6vw;
-     }
-
-     .rightContent img{
-          width: 90vw;
-     }
-
-     .hero_content_area  button{
-          font-size: 3vw;
-          margin-bottom: 5vh;
-     }
-
-     /* .home_latest_job_area{
-          flex-direction: column;
-          padding: 30px;
-     } */
 
      .home_latest_job_area{
           grid-template-columns: repeat(1, 1fr);
@@ -183,8 +120,4 @@
           align-content: center;
      }
 
-     .homePageContainer{
-          flex-direction: column;
-          align-items: flex-start;
-     }
 }

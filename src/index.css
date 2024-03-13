@@ -13,6 +13,10 @@ body{
      overflow-x: hidden;
 }
 
+button, input{
+     font-family: 'Montserrat', sans-serif;
+}
+
 ::webkit-scrollbar{
      width: 5px;
 }
