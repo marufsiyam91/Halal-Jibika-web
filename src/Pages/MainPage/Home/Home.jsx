@@ -34,10 +34,7 @@ const Home = () => {
 
   console.log(data);
 
-  const handleNavigate = () => {
-    console.log("button clicked");
-    navigate("/jobs");
-  };
+
 
   return (
     <div className={style.home_page}>
